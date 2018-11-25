@@ -1,4 +1,8 @@
 # Phema.Localization
+ 
+ - [x] Core library
+ - [x] AspNetCore integration
+ - [x] Tests
 
 ```csharp
 
