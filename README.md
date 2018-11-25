@@ -8,10 +8,10 @@
 ```csharp
 var map = new Dictionary<CultureInfo, IDictionary<Type, Func<ILocalizationComponent>>>
 {
-	[CultureInfo.InvariantCulture] = new Dictionary<Type, Func<ILocalizationComponent>>
-	{
- 		[typeof(ITestComponent)] = () => new InvariantCultureTestComponent()
-	}
+  [CultureInfo.InvariantCulture] = new Dictionary<Type, Func<ILocalizationComponent>>
+  {
+    [typeof(ITestComponent)] = () => new InvariantCultureTestComponent()
+  }
 };
 			
 var localizer = new Localizer(CultureInfo.InvariantCulture, new LocalizationProvider(map));
