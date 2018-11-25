@@ -14,8 +14,7 @@
 
 
 	<ItemGroup>
-	  <ProjectReference Include="..\src\Phema.Localization\Phema.Localization.csproj" />
+	  <ProjectReference Include="..\Phema.Localization\Phema.Localization.csproj" />
 	</ItemGroup>
-
 
 </Project>
