@@ -19,23 +19,26 @@ namespace Phema.Localization
 			this.options = options.Value;
 		}
 
-		public CultureInfo Culture
-		{
-			get
-			{
-				var httpContext = provider.GetRequiredService<IHttpContextAccessor>().HttpContext;
-				var acceptLanguage = httpContext.Request.Headers[HeaderNames.AcceptLanguage];
-
-				return acceptLanguage.Any() 
-					? CultureInfo.GetCultureInfo(acceptLanguage.Single()) 
-					: options.CultureInfo;
-			}
-		}
-
 		public LocalizationMessage Localize<TComponent>(Func<TComponent, LocalizationMessage> selector)
 			where TComponent : ILocalizationComponent
 		{
-			return LocalizerCache.GetFromCache(Culture, provider, options).Localize(selector);
+			return LocalizerCache.GetFromCache(TryGetCultureInfo(), provider, options).Localize(selector);
+		}
+		
+		private CultureInfo TryGetCultureInfo()
+		{
+			var httpContext = provider.GetRequiredService<IHttpContextAccessor>().HttpContext;
+
+			if (httpContext == null)
+			{
+				return options.CultureInfo;
+			}
+			
+			var acceptLanguage = httpContext.Request.Headers[HeaderNames.AcceptLanguage];
+
+			return acceptLanguage.Any() 
+				? CultureInfo.GetCultureInfo(acceptLanguage.Single()) 
+				: options.CultureInfo;
 		}
 	}
 }
