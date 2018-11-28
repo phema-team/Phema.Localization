@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace Phema.Localization
 {
-	public class LocalizationOptions
+	public sealed class LocalizationOptions
 	{
 		public LocalizationOptions()
 		{

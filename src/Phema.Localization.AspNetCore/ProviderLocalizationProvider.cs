@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Phema.Localization
 {
-	internal class ProviderLocalizationProvider : ILocalizationProvider
+	internal sealed class ProviderLocalizationProvider : ILocalizationProvider
 	{
 		private readonly IServiceProvider provider;
 		private readonly LocalizationOptions options;

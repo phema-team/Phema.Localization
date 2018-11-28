@@ -1,17 +1,17 @@
 ﻿namespace Phema.Localization
 {
-	public class LocalizationMessage
+	public sealed class LocalizationMessage
 	{
-		private readonly string template;
-
 		public LocalizationMessage(string template)
 		{
-			this.template = template;
+			Template = template;
 		}
 
-		public static implicit operator string(LocalizationMessage localizationMessage)
+		public string Template { get; }
+
+		public static implicit operator string(LocalizationMessage message)
 		{
-			return localizationMessage.template;
+			return message.Template;
 		}
 	}
 }

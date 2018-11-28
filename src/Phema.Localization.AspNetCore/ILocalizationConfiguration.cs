@@ -10,7 +10,7 @@ namespace Phema.Localization
 		void AddCultures(IEnumerable<CultureInfo> cultures, Action<ICultureConfiguration> configuration);
 	}
 	
-	internal class LocalizationConfiguration : ILocalizationConfiguration
+	internal sealed class LocalizationConfiguration : ILocalizationConfiguration
 	{
 		private readonly IServiceCollection services;
 

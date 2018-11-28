@@ -93,9 +93,9 @@ namespace Phema.Localization.Tests.AspNetCore
 
 			var localizer = provider.GetRequiredService<ILocalizer>();
 
-			var message = localizer.Localize<ITestLocalizationComponent>(c => c.Test);
+			var result = localizer.Localize<ITestLocalizationComponent>(c => c.Test);
 			
-			Assert.Equal("template", message);
+			Assert.Equal("template", result);
 		}
 	}
 }

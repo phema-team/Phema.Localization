@@ -12,6 +12,5 @@ namespace Phema.Localization
 		{
 			configuration.AddCultures(new[] { cultures }, action);
 		}
-		
 	}
 }

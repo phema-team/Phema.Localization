@@ -10,7 +10,7 @@ namespace Phema.Localization
 			where TComponent : ILocalizationComponent;
 	}
 	
-	public class LocalizationProvider : ILocalizationProvider
+	public sealed class LocalizationProvider : ILocalizationProvider
 	{
 		private readonly IDictionary<CultureInfo, IDictionary<Type, Func<ILocalizationComponent>>> localization;
 

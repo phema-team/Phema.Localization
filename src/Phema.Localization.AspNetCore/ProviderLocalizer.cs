@@ -8,7 +8,7 @@ using Microsoft.Net.Http.Headers;
 
 namespace Phema.Localization
 {
-	internal class ProviderLocalizer : ILocalizer
+	internal sealed class ProviderLocalizer : ILocalizer
 	{
 		private readonly IServiceProvider provider;
 		private readonly LocalizationOptions options;
@@ -18,18 +18,24 @@ namespace Phema.Localization
 			this.provider = provider;
 			this.options = options.Value;
 		}
-		
-		public string Localize<TComponent>(Func<TComponent, LocalizationMessage> selector)
+
+		public CultureInfo Culture
+		{
+			get
+			{
+				var httpContext = provider.GetRequiredService<IHttpContextAccessor>().HttpContext;
+				var acceptLanguage = httpContext.Request.Headers[HeaderNames.AcceptLanguage];
+
+				return acceptLanguage.Any() 
+					? CultureInfo.GetCultureInfo(acceptLanguage.Single()) 
+					: options.CultureInfo;
+			}
+		}
+
+		public LocalizationMessage Localize<TComponent>(Func<TComponent, LocalizationMessage> selector)
 			where TComponent : ILocalizationComponent
 		{
-			var httpContext = provider.GetRequiredService<IHttpContextAccessor>().HttpContext;
-			var acceptLanguage = httpContext.Request.Headers[HeaderNames.AcceptLanguage];
-
-			var culture = acceptLanguage.Any() 
-				? CultureInfo.GetCultureInfo(acceptLanguage.Single()) 
-				: options.CultureInfo;
-
-			return LocalizerCache.GetFromCache(culture, provider, options).Localize(selector);
+			return LocalizerCache.GetFromCache(Culture, provider, options).Localize(selector);
 		}
 	}
 }

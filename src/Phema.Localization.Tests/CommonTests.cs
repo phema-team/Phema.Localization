@@ -35,9 +35,9 @@ namespace Phema.Localization.Tests
 			
 			var localizer = new Localizer(CultureInfo.GetCultureInfo("en"), new LocalizationProvider(map));
 
-			var message = localizer.Localize<ITestComponent>(c => c.Message);
+			var result = localizer.Localize<ITestComponent>(c => c.Message);
 
-			Assert.Equal("template", message);
+			Assert.Equal("template", result);
 		}
 		
 		[Fact]
@@ -76,15 +76,15 @@ namespace Phema.Localization.Tests
 			
 			var invariantLocalizer = new Localizer(CultureInfo.InvariantCulture, new LocalizationProvider(map));
 
-			var invariantMessage = invariantLocalizer.Localize<ITestComponent>(c => c.Message);
+			var invariantResult = invariantLocalizer.Localize<ITestComponent>(c => c.Message);
 
-			Assert.Equal("invariant", invariantMessage);
+			Assert.Equal("invariant", invariantResult);
 			
 			var englishLocalizer = new Localizer(CultureInfo.GetCultureInfo("en"), new LocalizationProvider(map));
 
-			var englishMessage = englishLocalizer.Localize<ITestComponent>(c => c.Message);
+			var message = englishLocalizer.Localize<ITestComponent>(c => c.Message);
 
-			Assert.Equal("template", englishMessage);
+			Assert.Equal("template", message);
 		}
 	}
 }

@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Phema.Localization
 {
-	public class LocalizationException : Exception
+	public sealed class LocalizationException : Exception
 	{
 		public LocalizationException(CultureInfo culture, Type component)
 			: base($"{culture}:{component.Name}")

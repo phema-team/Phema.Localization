@@ -67,9 +67,9 @@ namespace Phema.Localization.Sandbox
 			{
 				var localization = context.RequestServices.GetRequiredService<ILocalizer>();
 
-				var message = localization.Localize<IModelLocalizationComponent>(c => c.NameMustBeSet);
+				var result = localization.Localize<IModelLocalizationComponent>(c => c.NameMustBeSet);
 
-				await context.Response.WriteAsync(message);
+				await context.Response.WriteAsync(result);
 			});
 		}
 	}
