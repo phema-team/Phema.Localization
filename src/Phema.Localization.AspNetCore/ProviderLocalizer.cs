@@ -36,9 +36,17 @@ namespace Phema.Localization
 			
 			var acceptLanguage = httpContext.Request.Headers[HeaderNames.AcceptLanguage];
 
-			return acceptLanguage.Any() 
-				? CultureInfo.GetCultureInfo(acceptLanguage.Single()) 
-				: options.CultureInfo;
+			if (acceptLanguage.Any())
+			{
+				var preferredCulture = acceptLanguage.FirstOrDefault();
+
+				var foundCulture = CultureInfo.GetCultures(CultureTypes.AllCultures)
+					.FirstOrDefault(culture => culture.Name == preferredCulture);
+
+				return foundCulture ?? options.CultureInfo;
+			}
+
+			return options.CultureInfo;
 		}
 	}
 }
