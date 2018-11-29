@@ -60,9 +60,9 @@ namespace Phema.Localization.Tests.AspNetCore
 			
 			Assert.NotNull(options);
 
-			var (culture, map) = Assert.Single(options.Value.Localization);
+			var (cultureInfo, map) = Assert.Single(options.Value.Localization);
 			
-			Assert.Equal(CultureInfo.InvariantCulture, culture);
+			Assert.Equal(CultureInfo.InvariantCulture, cultureInfo);
 			
 			var (type, factory) = Assert.Single(map);
 			

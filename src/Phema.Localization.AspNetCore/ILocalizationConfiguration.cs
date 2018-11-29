@@ -35,11 +35,11 @@ namespace Phema.Localization
 	internal class CultureConfiguration : ICultureConfiguration
 	{
 		private readonly IServiceCollection services;
-		private readonly IEnumerable<CultureInfo> cultures;
+		private readonly IEnumerable<CultureInfo> cultureInfos;
 
-		public CultureConfiguration(IEnumerable<CultureInfo> cultures, IServiceCollection services)
+		public CultureConfiguration(IEnumerable<CultureInfo> cultureInfos, IServiceCollection services)
 		{
-			this.cultures = cultures;
+			this.cultureInfos = cultureInfos;
 			this.services = services;
 		}
 		
@@ -51,11 +51,11 @@ namespace Phema.Localization
 			
 			services.Configure<LocalizationOptions>(options =>
 			{
-				foreach (var culture in cultures)
+				foreach (var cultureInfo in cultureInfos)
 				{
-					if (!options.Localization.TryGetValue(culture, out var map))
+					if (!options.Localization.TryGetValue(cultureInfo, out var map))
 					{
-						options.Localization.Add(culture, map = new Dictionary<Type, Func<IServiceProvider, ILocalizationComponent>>());
+						options.Localization.Add(cultureInfo, map = new Dictionary<Type, Func<IServiceProvider, ILocalizationComponent>>());
 					}
 					
 					map.Add(typeof(TComponent), sp => sp.GetRequiredService<TLanguageComponent>());

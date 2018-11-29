@@ -55,7 +55,7 @@ namespace Phema.Localization.Tests
 
 			var exception = Assert.Throws<LocalizationException>(() => localizer.Localize<ITestComponent>(c => c.Message));
 			
-			Assert.Equal(CultureInfo.InvariantCulture, exception.Culture);
+			Assert.Equal(CultureInfo.InvariantCulture, exception.CultureInfo);
 			Assert.Equal(typeof(ITestComponent), exception.Component);
 		}
 		

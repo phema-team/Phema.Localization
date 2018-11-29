@@ -20,7 +20,7 @@ namespace Phema.Localization.Sandbox
 	{
 		public InvariantModelLocalizationComponent()
 		{
-			NameMustBeSet = new LocalizationMessage("template");
+			NameMustBeSet = new LocalizationMessage("invariant");
 		}
 
 		public LocalizationMessage NameMustBeSet { get; }
@@ -42,15 +42,19 @@ namespace Phema.Localization.Sandbox
 		{
 			services.AddLocalization(configuration =>
 			{
-				configuration.AddCultures(new[] {CultureInfo.InvariantCulture}, culture =>
-				{
-					culture.AddComponent<IModelLocalizationComponent, InvariantModelLocalizationComponent>();
-				});
+				configuration.AddCultures(
+					new[] {CultureInfo.InvariantCulture, CultureInfo.GetCultureInfo("ru"), }, 
+					culture =>
+					{
+						culture.AddComponent<IModelLocalizationComponent, InvariantModelLocalizationComponent>();
+					});
 
-				configuration.AddCulture(CultureInfo.GetCultureInfo("en"), culture =>
-				{
-					culture.AddComponent<Model, IModelLocalizationComponent, EnglishModelLocalizationComponent>();
-				});
+				configuration.AddCulture(
+					CultureInfo.GetCultureInfo("en"), 
+					culture =>
+					{
+						culture.AddComponent<Model, IModelLocalizationComponent, EnglishModelLocalizationComponent>();
+					});
 			});
 
 			services.Configure<LocalizationOptions>(o => o.CultureInfo = CultureInfo.GetCultureInfo("en"));

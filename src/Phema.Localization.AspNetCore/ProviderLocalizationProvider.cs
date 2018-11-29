@@ -14,10 +14,10 @@ namespace Phema.Localization
 			this.options = options;
 		}
 		
-		public LocalizationMessage Localize<TComponent>(CultureInfo culture, Func<TComponent, LocalizationMessage> selector) 
+		public LocalizationMessage Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, LocalizationMessage> selector) 
 			where TComponent : ILocalizationComponent
 		{
-			if (options.Localization.TryGetValue(culture, out var map))
+			if (options.Localization.TryGetValue(cultureInfo, out var map))
 			{
 				if (map.TryGetValue(typeof(TComponent), out var factory))
 				{
@@ -26,8 +26,8 @@ namespace Phema.Localization
 					return selector(component);
 				}
 			}
-			
-			throw new LocalizationException(culture, typeof(TComponent));
+
+			return Localize(options.CultureInfo, selector);
 		}
 	}
 }

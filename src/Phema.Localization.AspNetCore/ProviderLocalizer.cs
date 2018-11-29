@@ -41,7 +41,7 @@ namespace Phema.Localization
 				var preferredCulture = acceptLanguage.FirstOrDefault();
 
 				var foundCulture = CultureInfo.GetCultures(CultureTypes.AllCultures)
-					.FirstOrDefault(culture => culture.Name == preferredCulture);
+					.FirstOrDefault(cultureInfo => cultureInfo.Name == preferredCulture);
 
 				return foundCulture ?? options.CultureInfo;
 			}

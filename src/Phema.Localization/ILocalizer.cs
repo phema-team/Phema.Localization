@@ -11,12 +11,12 @@ namespace Phema.Localization
 
 	public sealed class Localizer : ILocalizer
 	{
-		private readonly CultureInfo culture;
+		private readonly CultureInfo cultureInfo;
 		private readonly ILocalizationProvider provider;
 
-		public Localizer(CultureInfo culture, ILocalizationProvider provider)
+		public Localizer(CultureInfo cultureInfo, ILocalizationProvider provider)
 		{
-			this.culture = culture;
+			this.cultureInfo = cultureInfo;
 			this.provider = provider;
 		}
 
@@ -24,7 +24,7 @@ namespace Phema.Localization
 		public LocalizationMessage Localize<TComponent>(Func<TComponent, LocalizationMessage> selector)
 			where TComponent : ILocalizationComponent
 		{
-			return provider.Localize(culture, selector);
+			return provider.Localize(cultureInfo, selector);
 		}
 	}
 }

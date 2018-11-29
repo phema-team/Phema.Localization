@@ -5,14 +5,20 @@ namespace Phema.Localization
 {
 	public sealed class LocalizationException : Exception
 	{
-		public LocalizationException(CultureInfo culture, Type component)
-			: base($"{culture}:{component.Name}")
+		public LocalizationException(CultureInfo cultureInfo)
+			: base($"{cultureInfo}")
 		{
-			Culture = culture;
+			CultureInfo = cultureInfo;
+		}
+		
+		public LocalizationException(CultureInfo cultureInfo, Type component)
+			: base($"{cultureInfo}:{component.Name}")
+		{
+			CultureInfo = cultureInfo;
 			Component = component;
 		}
 		
-		public CultureInfo Culture { get; }
+		public CultureInfo CultureInfo { get; }
 		public Type Component { get; }
 	}
 }
