@@ -20,4 +20,8 @@
 	  <ProjectReference Include="..\Phema.Localization\Phema.Localization.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="AspNetCore" />
+	</ItemGroup>
+
 </Project>
