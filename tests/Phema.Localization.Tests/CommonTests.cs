@@ -73,14 +73,16 @@ namespace Phema.Localization.Tests
 					[typeof(ITestComponent)] = () => new InvariantTestComponent()
 				}
 			};
+
+			var provider = new LocalizationProvider(map);
 			
-			var invariantLocalizer = new Localizer(CultureInfo.InvariantCulture, new LocalizationProvider(map));
+			var invariantLocalizer = new Localizer(CultureInfo.InvariantCulture, provider);
 
 			var invariantResult = invariantLocalizer.Localize<ITestComponent>(c => c.Message);
 
 			Assert.Equal("invariant", invariantResult);
 			
-			var englishLocalizer = new Localizer(CultureInfo.GetCultureInfo("en"), new LocalizationProvider(map));
+			var englishLocalizer = new Localizer(CultureInfo.GetCultureInfo("en"), provider);
 
 			var message = englishLocalizer.Localize<ITestComponent>(c => c.Message);
 

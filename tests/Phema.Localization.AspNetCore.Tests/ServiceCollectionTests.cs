@@ -25,7 +25,6 @@ namespace Phema.Localization.Tests.AspNetCore
 			Assert.Single(services.Where(x => x.ServiceType == typeof(ILocalizer)));
 		}
 
-
 		private interface ITestLocalizationComponent : ILocalizationComponent
 		{
 			LocalizationMessage Test { get; }
@@ -46,9 +45,9 @@ namespace Phema.Localization.Tests.AspNetCore
 		{
 			services.AddLocalization(localization =>
 			{
-				localization.AddCultures(new[] { CultureInfo.InvariantCulture }, c =>
+				localization.AddCultures(new[] { CultureInfo.InvariantCulture }, culture =>
 				{
-					c.AddComponent<ITestLocalizationComponent, TestLocalizationComponent>();
+					culture.AddComponent<ITestLocalizationComponent, TestLocalizationComponent>();
 				});
 			});
 

@@ -11,6 +11,7 @@ namespace Phema.Localization
 		{
 			services.AddHttpContextAccessor();
 			services.AddSingleton<ILocalizer, ProviderLocalizer>();
+			services.AddSingleton<ILocalizationProvider, ProviderLocalizationProvider>();
 			services.ConfigureOptions<LocalizationPostConfigureOptions>();
 			
 			action(new LocalizationConfiguration(services));

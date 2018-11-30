@@ -10,24 +10,29 @@ namespace Phema.Localization
 {
 	internal sealed class ProviderLocalizer : ILocalizer
 	{
-		private readonly IServiceProvider provider;
+		private readonly IServiceProvider serviceProvider;
 		private readonly LocalizationOptions options;
-
-		public ProviderLocalizer(IServiceProvider provider, IOptions<LocalizationOptions> options)
+		private readonly ILocalizationProvider localizationProvider;
+		
+		public ProviderLocalizer(
+			IServiceProvider serviceProvider,
+			IOptions<LocalizationOptions> options,
+			ILocalizationProvider localizationProvider)
 		{
-			this.provider = provider;
 			this.options = options.Value;
+			this.serviceProvider = serviceProvider;
+			this.localizationProvider = localizationProvider;
 		}
 
 		public LocalizationMessage Localize<TComponent>(Func<TComponent, LocalizationMessage> selector)
 			where TComponent : ILocalizationComponent
 		{
-			return LocalizerCache.GetFromCache(TryGetCultureInfo(), provider, options).Localize(selector);
+			return localizationProvider.Localize(TryGetCultureInfo(), selector);
 		}
 		
 		private CultureInfo TryGetCultureInfo()
 		{
-			var httpContext = provider.GetRequiredService<IHttpContextAccessor>().HttpContext;
+			var httpContext = serviceProvider.GetRequiredService<IHttpContextAccessor>().HttpContext;
 
 			if (httpContext == null)
 			{

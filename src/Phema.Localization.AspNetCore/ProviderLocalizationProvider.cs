@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using Microsoft.Extensions.Options;
 
 namespace Phema.Localization
 {
@@ -8,10 +9,10 @@ namespace Phema.Localization
 		private readonly IServiceProvider provider;
 		private readonly LocalizationOptions options;
 
-		public ProviderLocalizationProvider(IServiceProvider provider, LocalizationOptions options)
+		public ProviderLocalizationProvider(IServiceProvider provider, IOptions<LocalizationOptions> options)
 		{
 			this.provider = provider;
-			this.options = options;
+			this.options = options.Value;
 		}
 		
 		public LocalizationMessage Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, LocalizationMessage> selector) 

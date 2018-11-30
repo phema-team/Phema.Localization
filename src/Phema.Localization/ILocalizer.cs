@@ -20,7 +20,6 @@ namespace Phema.Localization
 			this.provider = provider;
 		}
 
-		
 		public LocalizationMessage Localize<TComponent>(Func<TComponent, LocalizationMessage> selector)
 			where TComponent : ILocalizationComponent
 		{
