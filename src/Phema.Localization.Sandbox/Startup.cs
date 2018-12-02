@@ -13,27 +13,27 @@ namespace Phema.Localization.Sandbox
 
 	public interface IModelLocalizationComponent : ILocalizationComponent<Model>
 	{
-		LocalizationMessage NameMustBeSet { get; }
+		LocalizationTemplate NameMustBeSet { get; }
 	}
 
 	public class InvariantModelLocalizationComponent : IModelLocalizationComponent
 	{
 		public InvariantModelLocalizationComponent()
 		{
-			NameMustBeSet = new LocalizationMessage("invariant");
+			NameMustBeSet = new LocalizationTemplate("invariant");
 		}
 
-		public LocalizationMessage NameMustBeSet { get; }
+		public LocalizationTemplate NameMustBeSet { get; }
 	}
 
 	public class EnglishModelLocalizationComponent : IModelLocalizationComponent
 	{
 		public EnglishModelLocalizationComponent()
 		{
-			NameMustBeSet = new LocalizationMessage("english");
+			NameMustBeSet = new LocalizationTemplate("english");
 		}
 
-		public LocalizationMessage NameMustBeSet { get; }
+		public LocalizationTemplate NameMustBeSet { get; }
 	}
 
 	public class Startup
@@ -71,7 +71,7 @@ namespace Phema.Localization.Sandbox
 			{
 				var localization = context.RequestServices.GetRequiredService<ILocalizer>();
 
-				var result = localization.Localize<IModelLocalizationComponent>(c => c.NameMustBeSet);
+				var result = localization.Localize<IModelLocalizationComponent>(c => c.NameMustBeSet, null);
 
 				await context.Response.WriteAsync(result);
 			});

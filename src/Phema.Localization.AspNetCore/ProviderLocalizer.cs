@@ -24,10 +24,14 @@ namespace Phema.Localization
 			this.localizationProvider = localizationProvider;
 		}
 
-		public LocalizationMessage Localize<TComponent>(Func<TComponent, LocalizationMessage> selector)
+		public LocalizationMessage Localize<TComponent>(Func<TComponent, ILocalizationTemplate> selector, object[] arguments)
 			where TComponent : ILocalizationComponent
 		{
-			return localizationProvider.Localize(TryGetCultureInfo(), selector);
+			var cultureInfo = TryGetCultureInfo();
+			
+			var template = localizationProvider.Localize(cultureInfo, selector);
+			
+			return new LocalizationMessage(template.GetMessage(cultureInfo, arguments));
 		}
 		
 		private CultureInfo TryGetCultureInfo()

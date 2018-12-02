@@ -6,7 +6,7 @@ namespace Phema.Localization
 {
 	public interface ILocalizationProvider
 	{
-		LocalizationMessage Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, LocalizationMessage> selector)
+		ILocalizationTemplate Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, ILocalizationTemplate> selector)
 			where TComponent : ILocalizationComponent;
 	}
 	
@@ -19,7 +19,7 @@ namespace Phema.Localization
 			this.localization = localization;
 		}
 
-		public LocalizationMessage Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, LocalizationMessage> selector)
+		public ILocalizationTemplate Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, ILocalizationTemplate> selector)
 			where TComponent : ILocalizationComponent
 		{
 			if (localization.TryGetValue(cultureInfo, out var map))

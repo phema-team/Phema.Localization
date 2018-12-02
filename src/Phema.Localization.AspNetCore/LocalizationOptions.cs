@@ -8,7 +8,6 @@ namespace Phema.Localization
 	{
 		public LocalizationOptions()
 		{
-			CultureInfo = CultureInfo.InvariantCulture;
 			Localization = new Dictionary<CultureInfo, IDictionary<Type, Func<IServiceProvider, ILocalizationComponent>>>();
 		}
 

@@ -9,17 +9,17 @@ namespace Phema.Localization.Tests
 	{
 		private interface ITestLocalizationProviderComponent : ILocalizationComponent
 		{
-			LocalizationMessage TestMessage { get; }
+			LocalizationTemplate TestTemplate { get; }
 		}
 		
 		private class TestLocalizationProviderComponent : ITestLocalizationProviderComponent
 		{
 			public TestLocalizationProviderComponent()
 			{
-				TestMessage = new LocalizationMessage("template");
+				TestTemplate = new LocalizationTemplate("template");
 			}
 			
-			public LocalizationMessage TestMessage { get; }
+			public LocalizationTemplate TestTemplate { get; }
 		}
 
 		[Fact]
@@ -28,7 +28,7 @@ namespace Phema.Localization.Tests
 			var provider = new LocalizationProvider(new Dictionary<CultureInfo, IDictionary<Type, Func<ILocalizationComponent>>>());
 
 			var exception = Assert.Throws<LocalizationException>(() =>
-				provider.Localize<ITestLocalizationProviderComponent>(CultureInfo.InvariantCulture, c => c.TestMessage));
+				provider.Localize<ITestLocalizationProviderComponent>(CultureInfo.InvariantCulture, c => c.TestTemplate));
 			
 			Assert.Equal(CultureInfo.InvariantCulture, exception.CultureInfo);
 			Assert.Equal(typeof(ITestLocalizationProviderComponent), exception.Component);
@@ -47,12 +47,12 @@ namespace Phema.Localization.Tests
 
 			var message = provider.Localize<ITestLocalizationProviderComponent>(
 				CultureInfo.GetCultureInfo("en"),
-				c => c.TestMessage);
+				c => c.TestTemplate);
 			
-			Assert.Equal("template", message);
+			Assert.Equal("template", message.GetMessage(CultureInfo.GetCultureInfo("en"), null));
 			
 			var exception = Assert.Throws<LocalizationException>(() =>
-				provider.Localize<ITestLocalizationProviderComponent>(CultureInfo.InvariantCulture, c => c.TestMessage));
+				provider.Localize<ITestLocalizationProviderComponent>(CultureInfo.InvariantCulture, c => c.TestTemplate));
 			
 			Assert.Equal(CultureInfo.InvariantCulture, exception.CultureInfo);
 			Assert.Equal(typeof(ITestLocalizationProviderComponent), exception.Component);

@@ -1,3 +1,4 @@
+using System.Globalization;
 using Xunit;
 
 namespace Phema.Localization.Tests
@@ -7,7 +8,7 @@ namespace Phema.Localization.Tests
 		[Fact]
 		public void CreateLocalizationMessage()
 		{
-			var message = new LocalizationMessage("template");
+			var message = new LocalizationTemplate("template");
 			
 			Assert.Equal("template", message.Template);
 		}
@@ -15,9 +16,9 @@ namespace Phema.Localization.Tests
 		[Fact]
 		public void LocalizationMessageImplicitCast()
 		{
-			var message = new LocalizationMessage("template");
+			var message = new LocalizationTemplate("template");
 			
-			Assert.Equal("template", message);
+			Assert.Equal("template", message.GetMessage(CultureInfo.InvariantCulture, null));
 		}
 	}
 }

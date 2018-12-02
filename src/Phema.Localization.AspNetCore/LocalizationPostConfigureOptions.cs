@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using System.Linq;
+using Microsoft.Extensions.Options;
 
 namespace Phema.Localization
 {
@@ -6,9 +7,16 @@ namespace Phema.Localization
 	{
 		public void PostConfigure(string name, LocalizationOptions options)
 		{
-			if (!options.Localization.ContainsKey(options.CultureInfo))
+			if (options.CultureInfo == null || !options.Localization.ContainsKey(options.CultureInfo))
 			{
-				throw new LocalizationException(options.CultureInfo);
+				if (options.Localization.Any())
+				{
+					options.CultureInfo = options.Localization.First().Key;
+				}
+				else
+				{
+					throw new LocalizationException(options.CultureInfo);
+				}
 			}
 		}
 	}

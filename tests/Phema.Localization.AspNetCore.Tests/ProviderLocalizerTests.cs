@@ -1,8 +1,6 @@
 using System.Globalization;
-using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Xunit;
 
@@ -16,27 +14,27 @@ namespace Phema.Localization.Tests.AspNetCore
 		
 		private interface ITestModelLocalizationComponent : ILocalizationComponent<TestModel>
 		{
-			LocalizationMessage TestMessage { get; }
+			LocalizationTemplate TestTemplate { get; }
 		}
 
 		private sealed class InvariantTestModelLocalizationComponent : ITestModelLocalizationComponent
 		{
 			public InvariantTestModelLocalizationComponent()
 			{
-				TestMessage = new LocalizationMessage("template");
+				TestTemplate = new LocalizationTemplate("template");
 			}
 			
-			public LocalizationMessage TestMessage { get; }
+			public LocalizationTemplate TestTemplate { get; }
 		}
 		
 		private sealed class EnglishTestModelLocalizationComponent : ITestModelLocalizationComponent
 		{
 			public EnglishTestModelLocalizationComponent()
 			{
-				TestMessage = new LocalizationMessage("english template");
+				TestTemplate = new LocalizationTemplate("english template");
 			}
 			
-			public LocalizationMessage TestMessage { get; }
+			public LocalizationTemplate TestTemplate { get; }
 		}
 		
 		[Fact]
@@ -58,7 +56,7 @@ namespace Phema.Localization.Tests.AspNetCore
 
 			var localizer = Assert.IsType<ProviderLocalizer>(provider.GetRequiredService<ILocalizer>());
 
-			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestMessage);
+			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate, null);
 
 			Assert.Equal("template", message);
 		}
@@ -97,7 +95,7 @@ namespace Phema.Localization.Tests.AspNetCore
 
 			var localizer = Assert.IsType<ProviderLocalizer>(provider.GetRequiredService<ILocalizer>());
 
-			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestMessage);
+			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate, null);
 
 			Assert.Equal("english template", message);
 		}

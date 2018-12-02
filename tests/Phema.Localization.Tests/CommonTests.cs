@@ -9,17 +9,17 @@ namespace Phema.Localization.Tests
 	{
 		private interface ITestComponent : ILocalizationComponent
 		{
-			LocalizationMessage Message { get; }
+			LocalizationTemplate Template { get; }
 		}
 		
 		private class EnglishTestComponent : ITestComponent
 		{
-			public LocalizationMessage Message => new LocalizationMessage("template");
+			public LocalizationTemplate Template => new LocalizationTemplate("template");
 		}
 		
 		private class InvariantTestComponent : ITestComponent
 		{
-			public LocalizationMessage Message => new LocalizationMessage("invariant");
+			public LocalizationTemplate Template => new LocalizationTemplate("invariant");
 		}
 		
 		[Fact]
@@ -35,7 +35,7 @@ namespace Phema.Localization.Tests
 			
 			var localizer = new Localizer(CultureInfo.GetCultureInfo("en"), new LocalizationProvider(map));
 
-			var result = localizer.Localize<ITestComponent>(c => c.Message);
+			var result = localizer.Localize<ITestComponent>(c => c.Template, null);
 
 			Assert.Equal("template", result);
 		}
@@ -53,7 +53,7 @@ namespace Phema.Localization.Tests
 			
 			var localizer = new Localizer(CultureInfo.InvariantCulture, new LocalizationProvider(map));
 
-			var exception = Assert.Throws<LocalizationException>(() => localizer.Localize<ITestComponent>(c => c.Message));
+			var exception = Assert.Throws<LocalizationException>(() => localizer.Localize<ITestComponent>(c => c.Template, null));
 			
 			Assert.Equal(CultureInfo.InvariantCulture, exception.CultureInfo);
 			Assert.Equal(typeof(ITestComponent), exception.Component);
@@ -78,13 +78,13 @@ namespace Phema.Localization.Tests
 			
 			var invariantLocalizer = new Localizer(CultureInfo.InvariantCulture, provider);
 
-			var invariantResult = invariantLocalizer.Localize<ITestComponent>(c => c.Message);
+			var invariantResult = invariantLocalizer.Localize<ITestComponent>(c => c.Template, null);
 
 			Assert.Equal("invariant", invariantResult);
 			
 			var englishLocalizer = new Localizer(CultureInfo.GetCultureInfo("en"), provider);
 
-			var message = englishLocalizer.Localize<ITestComponent>(c => c.Message);
+			var message = englishLocalizer.Localize<ITestComponent>(c => c.Template, null);
 
 			Assert.Equal("template", message);
 		}

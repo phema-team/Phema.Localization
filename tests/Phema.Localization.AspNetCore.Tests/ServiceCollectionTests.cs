@@ -27,17 +27,17 @@ namespace Phema.Localization.Tests.AspNetCore
 
 		private interface ITestLocalizationComponent : ILocalizationComponent
 		{
-			LocalizationMessage Test { get; }
+			LocalizationTemplate Test { get; }
 		}
 
 		private class TestLocalizationComponent : ITestLocalizationComponent
 		{
 			public TestLocalizationComponent()
 			{
-				Test = new LocalizationMessage("template");
+				Test = new LocalizationTemplate("template");
 			}
 			
-			public LocalizationMessage Test { get; }
+			public LocalizationTemplate Test { get; }
 		}
 		
 		[Fact]
@@ -92,7 +92,7 @@ namespace Phema.Localization.Tests.AspNetCore
 
 			var localizer = provider.GetRequiredService<ILocalizer>();
 
-			var result = localizer.Localize<ITestLocalizationComponent>(c => c.Test);
+			var result = localizer.Localize<ITestLocalizationComponent>(c => c.Test, null);
 			
 			Assert.Equal("template", result);
 		}
