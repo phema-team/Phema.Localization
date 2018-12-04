@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly: InternalsVisibleTo("Phema.Localization.Tests")]
+[assembly: InternalsVisibleTo("Phema.Localization.Cultures.Tests")]
 
 namespace Phema.Localization
 {
