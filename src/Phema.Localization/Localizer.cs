@@ -8,20 +8,17 @@ using Microsoft.Net.Http.Headers;
 
 namespace Phema.Localization
 {
-	internal sealed class ProviderLocalizer : ILocalizer
+	internal sealed class Localizer : ILocalizer
 	{
-		private readonly IServiceProvider serviceProvider;
+		private readonly IServiceProvider provider;
 		private readonly LocalizationOptions options;
-		private readonly ILocalizationProvider localizationProvider;
 		
-		public ProviderLocalizer(
-			IServiceProvider serviceProvider,
-			IOptions<LocalizationOptions> options,
-			ILocalizationProvider localizationProvider)
+		public Localizer(
+			IServiceProvider provider,
+			IOptions<LocalizationOptions> options)
 		{
+			this.provider = provider;
 			this.options = options.Value;
-			this.serviceProvider = serviceProvider;
-			this.localizationProvider = localizationProvider;
 		}
 
 		public LocalizationMessage Localize<TComponent>(Func<TComponent, ILocalizationTemplate> selector, object[] arguments)
@@ -29,14 +26,30 @@ namespace Phema.Localization
 		{
 			var cultureInfo = TryGetCultureInfo();
 			
-			var template = localizationProvider.Localize(cultureInfo, selector);
+			var template = Localize(cultureInfo, selector);
 			
 			return new LocalizationMessage(template.GetMessage(cultureInfo, arguments));
+		}
+
+		public ILocalizationTemplate Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, ILocalizationTemplate> selector) 
+			where TComponent : ILocalizationComponent
+		{
+			if (options.Localization.TryGetValue(cultureInfo, out var map))
+			{
+				if (map.TryGetValue(typeof(TComponent), out var factory))
+				{
+					var component = (TComponent) factory(provider);
+
+					return selector(component);
+				}
+			}
+
+			return Localize(options.CultureInfo, selector);
 		}
 		
 		private CultureInfo TryGetCultureInfo()
 		{
-			var httpContext = serviceProvider.GetRequiredService<IHttpContextAccessor>().HttpContext;
+			var httpContext = provider.GetRequiredService<IHttpContextAccessor>().HttpContext;
 
 			if (httpContext == null)
 			{

@@ -1,10 +1,11 @@
 using System.Globalization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Xunit;
 
-namespace Phema.Localization.Tests.AspNetCore
+namespace Phema.Localization.Tests
 {
 	public class ProviderLocalizerTests
 	{
@@ -54,7 +55,7 @@ namespace Phema.Localization.Tests.AspNetCore
 			
 			var provider = services.BuildServiceProvider();
 
-			var localizer = Assert.IsType<ProviderLocalizer>(provider.GetRequiredService<ILocalizer>());
+			var localizer = Assert.IsType<Localizer>(provider.GetRequiredService<ILocalizer>());
 
 			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate, null);
 
@@ -93,7 +94,7 @@ namespace Phema.Localization.Tests.AspNetCore
 			
 			var provider = services.BuildServiceProvider();
 
-			var localizer = Assert.IsType<ProviderLocalizer>(provider.GetRequiredService<ILocalizer>());
+			var localizer = Assert.IsType<Localizer>(provider.GetRequiredService<ILocalizer>());
 
 			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate, null);
 
@@ -111,13 +112,15 @@ namespace Phema.Localization.Tests.AspNetCore
 					culture.AddComponent<TestModel, ITestModelLocalizationComponent, InvariantTestModelLocalizationComponent>());
 			});
 
-			services.Configure<LocalizationOptions>(options => options.CultureInfo = CultureInfo.GetCultureInfo("en"));
+			services.Configure<LocalizationOptions>(o => o.CultureInfo = CultureInfo.GetCultureInfo("en"));
 
 			var provider = services.BuildServiceProvider();
+
+			provider.GetRequiredService<ILocalizer>();
+
+			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
 			
-			var exception = Assert.Throws<LocalizationException>(() => provider.GetRequiredService<ILocalizer>());
-			
-			Assert.Equal(CultureInfo.GetCultureInfo("en"), exception.CultureInfo);
+			Assert.Equal(CultureInfo.InvariantCulture, options.CultureInfo);
 		}
 	}
 }

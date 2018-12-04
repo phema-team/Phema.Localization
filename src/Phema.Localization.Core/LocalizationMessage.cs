@@ -1,4 +1,4 @@
-namespace Phema.Localization
+﻿namespace Phema.Localization
 {
 	public sealed class LocalizationMessage
 	{

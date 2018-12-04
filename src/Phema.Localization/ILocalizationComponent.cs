@@ -1,6 +1,10 @@
-﻿namespace Phema.Localization
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("Phema.Localization.AspNetCore.Tests")]
+
+namespace Phema.Localization
 {
-	public interface ILocalizationComponent
+	public interface ILocalizationComponent<TModel> : ILocalizationComponent
 	{
 	}
 }
