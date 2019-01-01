@@ -8,15 +8,17 @@ namespace Phema.Localization
 	{
 		public void PostConfigure(string name, LocalizationOptions options)
 		{
-			if (options.CultureInfo == null && !options.Localization.Any())
+			var hasAnyCulture = options.CultureInfo == null;
+			var hasAnyLocalization = options.Localization.Any();
+			
+			if (hasAnyCulture && !hasAnyLocalization)
 			{
 				throw new InvalidOperationException("No cultures registered");
 			}
 
-			var hasAnyCulture = options.CultureInfo == null && options.Localization.Any();
-			var hasInvalidCulture = options.CultureInfo != null && !options.Localization.ContainsKey(options.CultureInfo); 
+			var hasInvalidCulture = !hasAnyCulture && !options.Localization.ContainsKey(options.CultureInfo); 
 			
-			if (hasAnyCulture || hasInvalidCulture)
+			if (hasAnyLocalization && (hasAnyCulture || hasInvalidCulture))
 			{
 				options.CultureInfo = options.Localization.First().Key;
 			}

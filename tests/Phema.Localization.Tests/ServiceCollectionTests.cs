@@ -19,7 +19,7 @@ namespace Phema.Localization.Tests
 		[Fact]
 		public void AddLocalization()
 		{
-			services.AddLocalization(localization => {});
+			services.AddPhemaLocalization(localization => {});
 
 			Assert.Single(services.Where(x => x.ServiceType == typeof(IHttpContextAccessor)));
 			Assert.Single(services.Where(x => x.ServiceType == typeof(ILocalizer)));
@@ -43,7 +43,7 @@ namespace Phema.Localization.Tests
 		[Fact]
 		public void LocalizationConfiguration()
 		{
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 			{
 				localization.AddCultures(new[] { CultureInfo.InvariantCulture }, culture =>
 				{
@@ -75,7 +75,7 @@ namespace Phema.Localization.Tests
 		[Fact]
 		public void Localize()
 		{
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 			{
 				localization.AddCultures(new[] { CultureInfo.InvariantCulture }, c =>
 				{
@@ -92,7 +92,7 @@ namespace Phema.Localization.Tests
 
 			var localizer = provider.GetRequiredService<ILocalizer>();
 
-			var result = localizer.Localize<ITestLocalizationComponent>(c => c.Test, null);
+			var result = localizer.Localize<ITestLocalizationComponent>(c => c.Test);
 			
 			Assert.Equal("template", result);
 		}

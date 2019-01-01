@@ -18,7 +18,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddInvariantCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -35,7 +35,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAfarCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -52,7 +52,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAfrikaansCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -69,7 +69,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAghemCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -86,7 +86,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAkanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -103,7 +103,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAmharicCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -120,7 +120,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddArabicCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -137,7 +137,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMapudungunCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -154,7 +154,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAssameseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -171,7 +171,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAsuCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -188,7 +188,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAsturianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -205,7 +205,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAzerbaijaniCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -222,7 +222,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBashkirCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -239,7 +239,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBasaaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -256,7 +256,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBelarusianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -273,7 +273,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBembaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -290,7 +290,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBenaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -307,7 +307,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBulgarianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -324,7 +324,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddEdoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -341,7 +341,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBamanankanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -358,7 +358,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBanglaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -375,7 +375,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTibetanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -392,7 +392,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBretonCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -409,7 +409,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBodoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -426,7 +426,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBosnianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -443,7 +443,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBlinCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -460,7 +460,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddCatalanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -477,7 +477,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddChechenCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -494,7 +494,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddChigaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -511,7 +511,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddCherokeeCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -528,7 +528,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddCorsicanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -545,7 +545,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddCzechCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -562,7 +562,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddChurchSlavicCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -579,7 +579,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddWelshCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -596,7 +596,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddDanishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -613,7 +613,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTaitaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -630,7 +630,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGermanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -647,7 +647,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddZarmaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -664,7 +664,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLowerSorbianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -681,7 +681,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddDualaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -698,7 +698,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddDivehiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -715,7 +715,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddJolaFonyiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -732,7 +732,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddDzongkhaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -749,7 +749,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddEmbuCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -766,7 +766,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddEweCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -783,7 +783,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGreekCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -800,7 +800,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddEnglishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -817,7 +817,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddEsperantoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -834,7 +834,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSpanishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -851,7 +851,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddEstonianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -868,7 +868,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBasqueCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -885,7 +885,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddEwondoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -902,7 +902,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddPersianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -919,7 +919,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddFulahCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -936,7 +936,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddFinnishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -953,7 +953,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddFilipinoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -970,7 +970,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddFaroeseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -987,7 +987,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddFrenchCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1004,7 +1004,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddFriulianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1021,7 +1021,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddWesternFrisianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1038,7 +1038,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddIrishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1055,7 +1055,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddScottishGaelicCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1072,7 +1072,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGalicianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1089,7 +1089,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGuaraniCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1106,7 +1106,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSwissGermanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1123,7 +1123,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGujaratiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1140,7 +1140,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGusiiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1157,7 +1157,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddManxCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1174,7 +1174,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddHausaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1191,7 +1191,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddHawaiianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1208,7 +1208,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddHebrewCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1225,7 +1225,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddHindiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1242,7 +1242,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddCroatianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1259,7 +1259,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddUpperSorbianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1276,7 +1276,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddHungarianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1293,7 +1293,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddArmenianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1310,7 +1310,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddInterlinguaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1327,7 +1327,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddIbibioCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1344,7 +1344,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddIndonesianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1361,7 +1361,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddIgboCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1378,7 +1378,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddYiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1395,7 +1395,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddIcelandicCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1412,7 +1412,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddItalianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1429,7 +1429,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddInuktitutCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1446,7 +1446,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddJapaneseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1463,7 +1463,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNgombaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1480,7 +1480,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMachameCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1497,7 +1497,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddJavaneseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1514,7 +1514,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGeorgianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1531,7 +1531,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKabyleCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1548,7 +1548,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKambaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1565,7 +1565,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMakondeCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1582,7 +1582,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKabuverdianuCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1599,7 +1599,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKoyraChiiniCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1616,7 +1616,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKikuyuCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1633,7 +1633,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKazakhCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1650,7 +1650,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKakoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1667,7 +1667,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGreenlandicCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1684,7 +1684,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKalenjinCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1701,7 +1701,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKhmerCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1718,7 +1718,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKannadaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1735,7 +1735,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKoreanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1752,7 +1752,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKonkaniCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1769,7 +1769,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKanuriCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1786,7 +1786,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKashmiriCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1803,7 +1803,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddShambalaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1820,7 +1820,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBafiaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1837,7 +1837,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddColognianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1854,7 +1854,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddCentralKurdishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1871,7 +1871,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddCornishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1888,7 +1888,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKyrgyzCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1905,7 +1905,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLatinCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1922,7 +1922,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLangiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1939,7 +1939,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLuxembourgishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1956,7 +1956,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddGandaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1973,7 +1973,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLakotaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -1990,7 +1990,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLingalaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2007,7 +2007,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLaoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2024,7 +2024,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNorthernLuriCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2041,7 +2041,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLithuanianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2058,7 +2058,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLubaKatangaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2075,7 +2075,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLuoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2092,7 +2092,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLuyiaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2109,7 +2109,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLatvianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2126,7 +2126,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMasaiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2143,7 +2143,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMeruCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2160,7 +2160,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMorisyenCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2177,7 +2177,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMalagasyCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2194,7 +2194,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMakhuwaMeettoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2211,7 +2211,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMetaʼCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2228,7 +2228,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMaoriCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2245,7 +2245,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMacedonianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2262,7 +2262,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMalayalamCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2279,7 +2279,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMongolianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2296,7 +2296,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddManipuriCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2313,7 +2313,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMohawkCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2330,7 +2330,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMarathiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2347,7 +2347,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMalayCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2364,7 +2364,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMalteseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2381,7 +2381,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMundangCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2398,7 +2398,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddBurmeseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2415,7 +2415,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddMazanderaniCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2432,7 +2432,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNamaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2449,7 +2449,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNorwegianBokmålCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2466,7 +2466,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNorthNdebeleCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2483,7 +2483,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddLowGermanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2500,7 +2500,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNepaliCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2517,7 +2517,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddDutchCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2534,7 +2534,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKwasioCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2551,7 +2551,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNorwegianNynorskCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2568,7 +2568,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNgiemboonCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2585,7 +2585,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNorwegianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2602,7 +2602,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSouthNdebeleCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2619,7 +2619,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNuerCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2636,7 +2636,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNyankoleCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2653,7 +2653,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddOccitanCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2670,7 +2670,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddOromoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2687,7 +2687,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddOdiaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2704,7 +2704,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddOsseticCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2721,7 +2721,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddPunjabiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2738,7 +2738,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddPapiamentoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2755,7 +2755,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddPolishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2772,7 +2772,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddPrussianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2789,7 +2789,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddDariCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2806,7 +2806,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddPashtoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2823,7 +2823,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddPortugueseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2840,7 +2840,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddQuechuaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2857,7 +2857,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddRomanshCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2874,7 +2874,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddRundiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2891,7 +2891,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddRomanianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2908,7 +2908,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddRomboCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2925,7 +2925,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddRussianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2942,7 +2942,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKinyarwandaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2959,7 +2959,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddRwaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2976,7 +2976,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSanskritCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -2993,7 +2993,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSakhaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3010,7 +3010,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSamburuCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3027,7 +3027,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSanguCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3044,7 +3044,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSindhiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3061,7 +3061,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddNorthernSamiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3078,7 +3078,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSenaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3095,7 +3095,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKoyraboroSenniCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3112,7 +3112,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSangoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3129,7 +3129,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTachelhitCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3146,7 +3146,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSinhalaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3163,7 +3163,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSlovakCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3180,7 +3180,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSlovenianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3197,7 +3197,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSamiSouthernCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3214,7 +3214,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSamiLuleCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3231,7 +3231,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSamiInariCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3248,7 +3248,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSamiSkoltCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3265,7 +3265,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddShonaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3282,7 +3282,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSomaliCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3299,7 +3299,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddAlbanianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3316,7 +3316,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSerbianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3333,7 +3333,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddsiSwatiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3350,7 +3350,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSahoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3367,7 +3367,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSesothoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3384,7 +3384,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSwedishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3401,7 +3401,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddKiswahiliCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3418,7 +3418,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSyriacCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3435,7 +3435,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTamilCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3452,7 +3452,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTeluguCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3469,7 +3469,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTesoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3486,7 +3486,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTajikCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3503,7 +3503,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddThaiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3520,7 +3520,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTigrinyaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3537,7 +3537,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTigreCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3554,7 +3554,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTurkmenCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3571,7 +3571,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSetswanaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3588,7 +3588,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTonganCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3605,7 +3605,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTurkishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3622,7 +3622,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTsongaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3639,7 +3639,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTatarCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3656,7 +3656,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddTasawaqCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3673,7 +3673,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddCentralAtlasTamazightCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3690,7 +3690,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddUyghurCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3707,7 +3707,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddUkrainianCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3724,7 +3724,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddUrduCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3741,7 +3741,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddUzbekCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3758,7 +3758,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddVaiCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3775,7 +3775,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddVendaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3792,7 +3792,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddVietnameseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3809,7 +3809,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddVolapükCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3826,7 +3826,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddVunjoCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3843,7 +3843,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddWalserCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3860,7 +3860,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddWolayttaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3877,7 +3877,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddWolofCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3894,7 +3894,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddisiXhosaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3911,7 +3911,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddSogaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3928,7 +3928,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddYangbenCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3945,7 +3945,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddYiddishCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3962,7 +3962,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddYorubaCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3979,7 +3979,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddStandardMoroccanTamazightCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -3996,7 +3996,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddChineseCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();
@@ -4013,7 +4013,7 @@ namespace Phema.Localization.Cultures.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 				localization.AddisiZuluCulture(culture => culture.AddComponent<ITestModelLocalizationComponent, TestModelLocalizationComponent>()));
 
 			var provider = services.BuildServiceProvider();

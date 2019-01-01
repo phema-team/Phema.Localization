@@ -14,9 +14,10 @@ namespace Phema.Localization
 
 		public string GetMessage(CultureInfo cultureInfo, object[] arguments)
 		{
-			return arguments == null
-				? Template
-				: string.Format(cultureInfo, Template, arguments);
+			if (arguments == null)
+				throw new ArgumentNullException(nameof(arguments));
+			
+			return string.Format(cultureInfo, Template, arguments);
 		}
 	}
 	
@@ -31,10 +32,11 @@ namespace Phema.Localization
 		
 		public string GetMessage(CultureInfo cultureInfo, object[] arguments)
 		{
-			if (arguments?.Length != 1)
-			{
-				throw new ArgumentOutOfRangeException();
-			}
+			if (arguments == null)
+				throw new ArgumentNullException(nameof(arguments));
+			
+			if (arguments.Length != 1)
+				throw new ArgumentOutOfRangeException(nameof(arguments));
 			
 			return string.Format(cultureInfo, Template, arguments);
 		}
@@ -51,10 +53,11 @@ namespace Phema.Localization
 		
 		public string GetMessage(CultureInfo cultureInfo, object[] arguments)
 		{
-			if (arguments?.Length != 2)
-			{
-				throw new ArgumentOutOfRangeException();
-			}
+			if (arguments == null)
+				throw new ArgumentNullException(nameof(arguments));
+			
+			if (arguments.Length != 2)
+				throw new ArgumentOutOfRangeException(nameof(arguments));
 			
 			return string.Format(cultureInfo, Template, arguments);
 		}
@@ -71,10 +74,11 @@ namespace Phema.Localization
 		
 		public string GetMessage(CultureInfo cultureInfo, object[] arguments)
 		{
-			if (arguments?.Length != 3)
-			{
-				throw new ArgumentOutOfRangeException();
-			}
+			if (arguments == null)
+				throw new ArgumentNullException(nameof(arguments));
+			
+			if (arguments.Length != 3)
+				throw new ArgumentOutOfRangeException(nameof(arguments));
 			
 			return string.Format(cultureInfo, Template, arguments);
 		}

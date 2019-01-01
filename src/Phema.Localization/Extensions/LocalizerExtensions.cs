@@ -9,7 +9,7 @@ namespace Phema.Localization
 			Func<TComponent, LocalizationTemplate> selector)
 			where TComponent : ILocalizationComponent
 		{
-			return localizer.Localize(selector, null);
+			return localizer.Localize(selector, Array.Empty<object>());
 		}
 		
 		public static LocalizationMessage Localize<TComponent, TArgument>(

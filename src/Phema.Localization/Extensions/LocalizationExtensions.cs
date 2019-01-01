@@ -6,7 +6,7 @@ namespace Phema.Localization
 {
 	public static class LocalizationExtensions
 	{
-		public static IServiceCollection AddLocalization(
+		public static IServiceCollection AddPhemaLocalization(
 			this IServiceCollection services,
 			Action<ILocalizationConfiguration> action)
 		{

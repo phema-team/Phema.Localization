@@ -43,7 +43,7 @@ namespace Phema.Localization.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization => localization.AddCulture(CultureInfo.InvariantCulture, culture =>
+			services.AddPhemaLocalization(localization => localization.AddCulture(CultureInfo.InvariantCulture, culture =>
 				culture.AddComponent<TestModel, ITestModelLocalizationComponent, InvariantTestModelLocalizationComponent>()));
 
 			services.Configure<LocalizationOptions>(options => options.CultureInfo = CultureInfo.InvariantCulture);
@@ -57,7 +57,7 @@ namespace Phema.Localization.Tests
 
 			var localizer = Assert.IsType<Localizer>(provider.GetRequiredService<ILocalizer>());
 
-			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate, null);
+			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate);
 
 			Assert.Equal("template", message);
 		}
@@ -67,7 +67,7 @@ namespace Phema.Localization.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 			{
 				localization.AddCulture(CultureInfo.InvariantCulture, culture =>
 					culture.AddComponent<TestModel, ITestModelLocalizationComponent, InvariantTestModelLocalizationComponent>());
@@ -96,7 +96,7 @@ namespace Phema.Localization.Tests
 
 			var localizer = Assert.IsType<Localizer>(provider.GetRequiredService<ILocalizer>());
 
-			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate, null);
+			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate);
 
 			Assert.Equal("english template", message);
 		}
@@ -106,7 +106,7 @@ namespace Phema.Localization.Tests
 		{
 			var services = new ServiceCollection();
 
-			services.AddLocalization(localization =>
+			services.AddPhemaLocalization(localization =>
 			{
 				localization.AddCulture(CultureInfo.InvariantCulture, culture =>
 					culture.AddComponent<TestModel, ITestModelLocalizationComponent, InvariantTestModelLocalizationComponent>());

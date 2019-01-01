@@ -31,7 +31,7 @@ namespace Phema.Localization
 			return new LocalizationMessage(template.GetMessage(cultureInfo, arguments));
 		}
 
-		public ILocalizationTemplate Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, ILocalizationTemplate> selector) 
+		private ILocalizationTemplate Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, ILocalizationTemplate> selector) 
 			where TComponent : ILocalizationComponent
 		{
 			if (options.Localization.TryGetValue(cultureInfo, out var map))
