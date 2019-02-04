@@ -2,7 +2,6 @@ using System.Globalization;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 using System.Linq;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 
 namespace Phema.Localization.Tests
@@ -21,7 +20,6 @@ namespace Phema.Localization.Tests
 		{
 			services.AddPhemaLocalization(localization => {});
 
-			Assert.Single(services.Where(x => x.ServiceType == typeof(IHttpContextAccessor)));
 			Assert.Single(services.Where(x => x.ServiceType == typeof(ILocalizer)));
 		}
 
@@ -81,11 +79,6 @@ namespace Phema.Localization.Tests
 				{
 					c.AddComponent<ITestLocalizationComponent, TestLocalizationComponent>();
 				});
-			});
-
-			services.AddSingleton<IHttpContextAccessor>(sp => new HttpContextAccessor
-			{
-				HttpContext = new DefaultHttpContext()
 			});
 
 			var provider = services.BuildServiceProvider();

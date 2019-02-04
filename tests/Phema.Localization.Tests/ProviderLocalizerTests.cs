@@ -1,5 +1,7 @@
 using System.Globalization;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
@@ -46,17 +48,13 @@ namespace Phema.Localization.Tests
 			services.AddPhemaLocalization(localization => localization.AddCulture(CultureInfo.InvariantCulture, culture =>
 				culture.AddComponent<TestModel, ITestModelLocalizationComponent, InvariantTestModelLocalizationComponent>()));
 
-			services.Configure<LocalizationOptions>(options => options.CultureInfo = CultureInfo.InvariantCulture);
+			services.Configure<RequestLocalizationOptions>(options => options.DefaultRequestCulture = new RequestCulture(CultureInfo.InvariantCulture));
 
-			services.AddScoped<IHttpContextAccessor>(sp => new HttpContextAccessor
-			{
-				HttpContext = new DefaultHttpContext()
-			});
-			
 			var provider = services.BuildServiceProvider();
 
 			var localizer = Assert.IsType<Localizer>(provider.GetRequiredService<ILocalizer>());
 
+			CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate);
 
 			Assert.Equal("template", message);
@@ -78,24 +76,12 @@ namespace Phema.Localization.Tests
 
 			services.Configure<LocalizationOptions>(options => options.CultureInfo = CultureInfo.InvariantCulture);
 
-			services.AddScoped<IHttpContextAccessor>(sp => new HttpContextAccessor
-			{
-				HttpContext = new DefaultHttpContext
-				{
-					Request =
-					{
-						Headers =
-						{
-							[HeaderNames.AcceptLanguage] = "en"
-						}
-					}
-				}
-			});
-			
 			var provider = services.BuildServiceProvider();
 
 			var localizer = Assert.IsType<Localizer>(provider.GetRequiredService<ILocalizer>());
 
+			CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en");
+			
 			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate);
 
 			Assert.Equal("english template", message);

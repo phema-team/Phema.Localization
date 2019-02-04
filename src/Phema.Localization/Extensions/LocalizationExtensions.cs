@@ -8,14 +8,12 @@ namespace Phema.Localization
 	{
 		public static IServiceCollection AddPhemaLocalization(
 			this IServiceCollection services,
-			Action<ILocalizationConfiguration> action)
+			Action<ILocalizationConfiguration> configuration = null)
 		{
-			services.AddHttpContextAccessor();
+			configuration?.Invoke(new LocalizationConfiguration(services));
+
 			services.TryAddSingleton<ILocalizer, Localizer>();
-			services.ConfigureOptions<LocalizationPostConfigureOptions>();
-			
-			action(new LocalizationConfiguration(services));
-			return services;
+			return services.ConfigureOptions<LocalizationPostConfigureOptions>();
 		}
 	}
 }

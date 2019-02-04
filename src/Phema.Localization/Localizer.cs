@@ -24,7 +24,7 @@ namespace Phema.Localization
 		public LocalizationMessage Localize<TComponent>(Func<TComponent, ILocalizationTemplate> selector, object[] arguments)
 			where TComponent : ILocalizationComponent
 		{
-			var cultureInfo = TryGetCultureInfo();
+			var cultureInfo = CultureInfo.CurrentCulture;
 			
 			var template = Localize(cultureInfo, selector);
 			
@@ -45,30 +45,6 @@ namespace Phema.Localization
 			}
 
 			return Localize(options.CultureInfo, selector);
-		}
-		
-		private CultureInfo TryGetCultureInfo()
-		{
-			var httpContext = provider.GetRequiredService<IHttpContextAccessor>().HttpContext;
-
-			if (httpContext == null)
-			{
-				return options.CultureInfo;
-			}
-			
-			var acceptLanguage = httpContext.Request.Headers[HeaderNames.AcceptLanguage];
-
-			if (acceptLanguage.Any())
-			{
-				var preferredCulture = acceptLanguage.FirstOrDefault();
-
-				var foundCulture = CultureInfo.GetCultures(CultureTypes.AllCultures)
-					.FirstOrDefault(cultureInfo => cultureInfo.Name == preferredCulture);
-
-				return foundCulture ?? options.CultureInfo;
-			}
-
-			return options.CultureInfo;
 		}
 	}
 }
