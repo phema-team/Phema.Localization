@@ -1,0 +1,12 @@
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\bin\Debug\netcoreapp2.2\Phema.Localization.deps.json
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\bin\Debug\netcoreapp2.2\Phema.Localization.dll
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\bin\Debug\netcoreapp2.2\Phema.Localization.pdb
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\bin\Debug\netcoreapp2.2\Phema.Localization.Core.dll
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\bin\Debug\netcoreapp2.2\Phema.Localization.Core.pdb
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\obj\Debug\netcoreapp2.2\Phema.Localization.csprojAssemblyReference.cache
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\obj\Debug\netcoreapp2.2\Phema.Localization.csproj.CoreCompileInputs.cache
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\obj\Debug\netcoreapp2.2\Phema.Localization.AssemblyInfoInputs.cache
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\obj\Debug\netcoreapp2.2\Phema.Localization.AssemblyInfo.cs
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\obj\Debug\netcoreapp2.2\Phema.Localization.csproj.CopyComplete
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\obj\Debug\netcoreapp2.2\Phema.Localization.dll
+C:\Users\Sergey\Desktop\Phema.Localization\src\Phema.Localization\obj\Debug\netcoreapp2.2\Phema.Localization.pdb

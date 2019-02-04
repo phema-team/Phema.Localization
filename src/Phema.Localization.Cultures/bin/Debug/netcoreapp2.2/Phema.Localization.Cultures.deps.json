@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Phema.Localization.Cultures/2.0.0": {
+        "dependencies": {
+          "Phema.Localization.Core": "2.0.0"
+        },
+        "runtime": {
+          "Phema.Localization.Cultures.dll": {}
+        }
+      },
+      "Phema.Localization.Core/2.0.0": {
+        "runtime": {
+          "Phema.Localization.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Phema.Localization.Cultures/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Phema.Localization.Core/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

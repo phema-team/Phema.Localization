@@ -11,7 +11,7 @@ namespace Phema.Localization.Tests
 		{
 			var message = new LocalizationTemplate("template");
 			
-			Assert.Equal("template", message.Template);
+			Assert.Equal("template", message.GetMessage(CultureInfo.InvariantCulture, Array.Empty<object>()));
 		}
 		
 		[Fact]

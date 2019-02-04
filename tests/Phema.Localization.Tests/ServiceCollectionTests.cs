@@ -53,11 +53,11 @@ namespace Phema.Localization.Tests
 			
 			Assert.NotNull(provider.GetService<TestLocalizationComponent>());
 
-			var options = provider.GetService<IOptions<LocalizationOptions>>();
+			var options = provider.GetService<IOptions<PhemaLocalizationOptions>>();
 			
 			Assert.NotNull(options);
 
-			var (cultureInfo, map) = Assert.Single(options.Value.Localization);
+			var (cultureInfo, map) = Assert.Single(options.Value.Components);
 			
 			Assert.Equal(CultureInfo.InvariantCulture, cultureInfo);
 			

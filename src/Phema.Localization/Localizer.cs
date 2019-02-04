@@ -1,50 +1,50 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Linq;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
+using System.Threading;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Options;
-using Microsoft.Net.Http.Headers;
 
 namespace Phema.Localization
 {
 	internal sealed class Localizer : ILocalizer
 	{
-		private readonly IServiceProvider provider;
-		private readonly LocalizationOptions options;
-		
+		private readonly IServiceProvider serviceProvider;
+		private readonly PhemaLocalizationOptions localizationOptions;
+		private readonly RequestLocalizationOptions requestOptions;
+
 		public Localizer(
-			IServiceProvider provider,
-			IOptions<LocalizationOptions> options)
+			IServiceProvider serviceProvider,
+			IOptions<PhemaLocalizationOptions> localizationOptions,
+			IOptions<RequestLocalizationOptions> requestOptions)
 		{
-			this.provider = provider;
-			this.options = options.Value;
+			this.serviceProvider = serviceProvider;
+			this.localizationOptions = localizationOptions.Value;
+			this.requestOptions = requestOptions.Value;
 		}
-
-		public LocalizationMessage Localize<TComponent>(Func<TComponent, ILocalizationTemplate> selector, object[] arguments)
+		
+		public string Localize<TComponent>(Func<TComponent, ILocalizationTemplate> selector, object[] arguments) 
 			where TComponent : ILocalizationComponent
 		{
-			var cultureInfo = CultureInfo.CurrentCulture;
-			
-			var template = Localize(cultureInfo, selector);
-			
-			return new LocalizationMessage(template.GetMessage(cultureInfo, arguments));
+			return Localize(CultureInfo.CurrentCulture, selector, arguments)
+				?? Localize(requestOptions.DefaultRequestCulture.Culture, selector, arguments);
 		}
 
-		private ILocalizationTemplate Localize<TComponent>(CultureInfo cultureInfo, Func<TComponent, ILocalizationTemplate> selector) 
+		private string Localize<TComponent>(
+			CultureInfo cultureInfo,
+			Func<TComponent, ILocalizationTemplate> selector,
+			object[] arguments)
 			where TComponent : ILocalizationComponent
 		{
-			if (options.Localization.TryGetValue(cultureInfo, out var map))
-			{
-				if (map.TryGetValue(typeof(TComponent), out var factory))
-				{
-					var component = (TComponent) factory(provider);
+			if (!localizationOptions.Components.TryGetValue(cultureInfo, out var components)) 
+				return null;
+			
+			if (!components.TryGetValue(typeof(TComponent), out var factory))
+				return null;
+			
+			var component = (TComponent) factory(serviceProvider);
 
-					return selector(component);
-				}
-			}
-
-			return Localize(options.CultureInfo, selector);
+			return selector(component).GetMessage(cultureInfo, arguments);
 		}
 	}
 }

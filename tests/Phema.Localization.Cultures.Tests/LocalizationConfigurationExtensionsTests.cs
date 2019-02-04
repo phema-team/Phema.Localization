@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Linq;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Xunit;
@@ -23,9 +24,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo(""), cultureInfo);
 		}
@@ -40,9 +41,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("aa"), cultureInfo);
 		}
@@ -57,9 +58,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("af"), cultureInfo);
 		}
@@ -74,9 +75,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("agq"), cultureInfo);
 		}
@@ -91,9 +92,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ak"), cultureInfo);
 		}
@@ -108,9 +109,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("am"), cultureInfo);
 		}
@@ -125,9 +126,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ar"), cultureInfo);
 		}
@@ -142,9 +143,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("arn"), cultureInfo);
 		}
@@ -159,9 +160,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("as"), cultureInfo);
 		}
@@ -176,9 +177,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("asa"), cultureInfo);
 		}
@@ -193,9 +194,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ast"), cultureInfo);
 		}
@@ -210,9 +211,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("az"), cultureInfo);
 		}
@@ -227,9 +228,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ba"), cultureInfo);
 		}
@@ -244,9 +245,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bas"), cultureInfo);
 		}
@@ -261,9 +262,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("be"), cultureInfo);
 		}
@@ -278,9 +279,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bem"), cultureInfo);
 		}
@@ -295,9 +296,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bez"), cultureInfo);
 		}
@@ -312,9 +313,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bg"), cultureInfo);
 		}
@@ -329,9 +330,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bin"), cultureInfo);
 		}
@@ -346,9 +347,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bm"), cultureInfo);
 		}
@@ -363,9 +364,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bn"), cultureInfo);
 		}
@@ -380,9 +381,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bo"), cultureInfo);
 		}
@@ -397,9 +398,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("br"), cultureInfo);
 		}
@@ -414,9 +415,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("brx"), cultureInfo);
 		}
@@ -431,9 +432,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("bs"), cultureInfo);
 		}
@@ -448,9 +449,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("byn"), cultureInfo);
 		}
@@ -465,9 +466,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ca"), cultureInfo);
 		}
@@ -482,9 +483,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ce"), cultureInfo);
 		}
@@ -499,9 +500,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("cgg"), cultureInfo);
 		}
@@ -516,9 +517,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("chr"), cultureInfo);
 		}
@@ -533,9 +534,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("co"), cultureInfo);
 		}
@@ -550,9 +551,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("cs"), cultureInfo);
 		}
@@ -567,9 +568,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("cu"), cultureInfo);
 		}
@@ -584,9 +585,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("cy"), cultureInfo);
 		}
@@ -601,9 +602,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("da"), cultureInfo);
 		}
@@ -618,9 +619,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("dav"), cultureInfo);
 		}
@@ -635,9 +636,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("de"), cultureInfo);
 		}
@@ -652,9 +653,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("dje"), cultureInfo);
 		}
@@ -669,9 +670,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("dsb"), cultureInfo);
 		}
@@ -686,9 +687,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("dua"), cultureInfo);
 		}
@@ -703,9 +704,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("dv"), cultureInfo);
 		}
@@ -720,9 +721,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("dyo"), cultureInfo);
 		}
@@ -737,9 +738,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("dz"), cultureInfo);
 		}
@@ -754,9 +755,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ebu"), cultureInfo);
 		}
@@ -771,9 +772,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ee"), cultureInfo);
 		}
@@ -788,9 +789,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("el"), cultureInfo);
 		}
@@ -805,9 +806,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("en"), cultureInfo);
 		}
@@ -822,9 +823,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("eo"), cultureInfo);
 		}
@@ -839,9 +840,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("es"), cultureInfo);
 		}
@@ -856,9 +857,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("et"), cultureInfo);
 		}
@@ -873,9 +874,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("eu"), cultureInfo);
 		}
@@ -890,9 +891,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ewo"), cultureInfo);
 		}
@@ -907,9 +908,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("fa"), cultureInfo);
 		}
@@ -924,9 +925,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ff"), cultureInfo);
 		}
@@ -941,9 +942,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("fi"), cultureInfo);
 		}
@@ -958,9 +959,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("fil"), cultureInfo);
 		}
@@ -975,9 +976,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("fo"), cultureInfo);
 		}
@@ -992,9 +993,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("fr"), cultureInfo);
 		}
@@ -1009,9 +1010,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("fur"), cultureInfo);
 		}
@@ -1026,9 +1027,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("fy"), cultureInfo);
 		}
@@ -1043,9 +1044,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ga"), cultureInfo);
 		}
@@ -1060,9 +1061,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("gd"), cultureInfo);
 		}
@@ -1077,9 +1078,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("gl"), cultureInfo);
 		}
@@ -1094,9 +1095,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("gn"), cultureInfo);
 		}
@@ -1111,9 +1112,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("gsw"), cultureInfo);
 		}
@@ -1128,9 +1129,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("gu"), cultureInfo);
 		}
@@ -1145,9 +1146,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("guz"), cultureInfo);
 		}
@@ -1162,9 +1163,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("gv"), cultureInfo);
 		}
@@ -1179,9 +1180,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ha"), cultureInfo);
 		}
@@ -1196,9 +1197,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("haw"), cultureInfo);
 		}
@@ -1213,9 +1214,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("he"), cultureInfo);
 		}
@@ -1230,9 +1231,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("hi"), cultureInfo);
 		}
@@ -1247,9 +1248,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("hr"), cultureInfo);
 		}
@@ -1264,9 +1265,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("hsb"), cultureInfo);
 		}
@@ -1281,9 +1282,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("hu"), cultureInfo);
 		}
@@ -1298,9 +1299,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("hy"), cultureInfo);
 		}
@@ -1315,9 +1316,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ia"), cultureInfo);
 		}
@@ -1332,9 +1333,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ibb"), cultureInfo);
 		}
@@ -1349,9 +1350,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("id"), cultureInfo);
 		}
@@ -1366,9 +1367,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ig"), cultureInfo);
 		}
@@ -1383,9 +1384,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ii"), cultureInfo);
 		}
@@ -1400,9 +1401,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("is"), cultureInfo);
 		}
@@ -1417,9 +1418,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("it"), cultureInfo);
 		}
@@ -1434,9 +1435,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("iu"), cultureInfo);
 		}
@@ -1451,9 +1452,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ja"), cultureInfo);
 		}
@@ -1468,9 +1469,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("jgo"), cultureInfo);
 		}
@@ -1485,9 +1486,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("jmc"), cultureInfo);
 		}
@@ -1502,9 +1503,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("jv"), cultureInfo);
 		}
@@ -1519,9 +1520,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ka"), cultureInfo);
 		}
@@ -1536,9 +1537,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kab"), cultureInfo);
 		}
@@ -1553,9 +1554,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kam"), cultureInfo);
 		}
@@ -1570,9 +1571,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kde"), cultureInfo);
 		}
@@ -1587,9 +1588,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kea"), cultureInfo);
 		}
@@ -1604,9 +1605,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("khq"), cultureInfo);
 		}
@@ -1621,9 +1622,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ki"), cultureInfo);
 		}
@@ -1638,9 +1639,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kk"), cultureInfo);
 		}
@@ -1655,9 +1656,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kkj"), cultureInfo);
 		}
@@ -1672,9 +1673,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kl"), cultureInfo);
 		}
@@ -1689,9 +1690,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kln"), cultureInfo);
 		}
@@ -1706,9 +1707,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("km"), cultureInfo);
 		}
@@ -1723,9 +1724,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kn"), cultureInfo);
 		}
@@ -1740,9 +1741,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ko"), cultureInfo);
 		}
@@ -1757,9 +1758,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kok"), cultureInfo);
 		}
@@ -1774,9 +1775,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kr"), cultureInfo);
 		}
@@ -1791,9 +1792,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ks"), cultureInfo);
 		}
@@ -1808,9 +1809,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ksb"), cultureInfo);
 		}
@@ -1825,9 +1826,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ksf"), cultureInfo);
 		}
@@ -1842,9 +1843,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ksh"), cultureInfo);
 		}
@@ -1859,9 +1860,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ku"), cultureInfo);
 		}
@@ -1876,9 +1877,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("kw"), cultureInfo);
 		}
@@ -1893,9 +1894,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ky"), cultureInfo);
 		}
@@ -1910,9 +1911,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("la"), cultureInfo);
 		}
@@ -1927,9 +1928,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lag"), cultureInfo);
 		}
@@ -1944,9 +1945,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lb"), cultureInfo);
 		}
@@ -1961,9 +1962,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lg"), cultureInfo);
 		}
@@ -1978,9 +1979,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lkt"), cultureInfo);
 		}
@@ -1995,9 +1996,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ln"), cultureInfo);
 		}
@@ -2012,9 +2013,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lo"), cultureInfo);
 		}
@@ -2029,9 +2030,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lrc"), cultureInfo);
 		}
@@ -2046,9 +2047,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lt"), cultureInfo);
 		}
@@ -2063,9 +2064,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lu"), cultureInfo);
 		}
@@ -2080,9 +2081,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("luo"), cultureInfo);
 		}
@@ -2097,9 +2098,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("luy"), cultureInfo);
 		}
@@ -2114,9 +2115,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("lv"), cultureInfo);
 		}
@@ -2131,9 +2132,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mas"), cultureInfo);
 		}
@@ -2148,9 +2149,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mer"), cultureInfo);
 		}
@@ -2165,9 +2166,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mfe"), cultureInfo);
 		}
@@ -2182,9 +2183,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mg"), cultureInfo);
 		}
@@ -2199,9 +2200,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mgh"), cultureInfo);
 		}
@@ -2216,9 +2217,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mgo"), cultureInfo);
 		}
@@ -2233,9 +2234,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mi"), cultureInfo);
 		}
@@ -2250,9 +2251,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mk"), cultureInfo);
 		}
@@ -2267,9 +2268,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ml"), cultureInfo);
 		}
@@ -2284,9 +2285,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mn"), cultureInfo);
 		}
@@ -2301,9 +2302,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mni"), cultureInfo);
 		}
@@ -2318,9 +2319,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("moh"), cultureInfo);
 		}
@@ -2335,9 +2336,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mr"), cultureInfo);
 		}
@@ -2352,9 +2353,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ms"), cultureInfo);
 		}
@@ -2369,9 +2370,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mt"), cultureInfo);
 		}
@@ -2386,9 +2387,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mua"), cultureInfo);
 		}
@@ -2403,9 +2404,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("my"), cultureInfo);
 		}
@@ -2420,9 +2421,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("mzn"), cultureInfo);
 		}
@@ -2437,9 +2438,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("naq"), cultureInfo);
 		}
@@ -2454,9 +2455,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nb"), cultureInfo);
 		}
@@ -2471,9 +2472,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nd"), cultureInfo);
 		}
@@ -2488,9 +2489,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nds"), cultureInfo);
 		}
@@ -2505,9 +2506,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ne"), cultureInfo);
 		}
@@ -2522,9 +2523,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nl"), cultureInfo);
 		}
@@ -2539,9 +2540,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nmg"), cultureInfo);
 		}
@@ -2556,9 +2557,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nn"), cultureInfo);
 		}
@@ -2573,9 +2574,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nnh"), cultureInfo);
 		}
@@ -2590,9 +2591,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("no"), cultureInfo);
 		}
@@ -2607,9 +2608,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nr"), cultureInfo);
 		}
@@ -2624,9 +2625,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nus"), cultureInfo);
 		}
@@ -2641,9 +2642,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("nyn"), cultureInfo);
 		}
@@ -2658,9 +2659,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("oc"), cultureInfo);
 		}
@@ -2675,9 +2676,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("om"), cultureInfo);
 		}
@@ -2692,9 +2693,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("or"), cultureInfo);
 		}
@@ -2709,9 +2710,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("os"), cultureInfo);
 		}
@@ -2726,9 +2727,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("pa"), cultureInfo);
 		}
@@ -2743,9 +2744,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("pap"), cultureInfo);
 		}
@@ -2760,9 +2761,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("pl"), cultureInfo);
 		}
@@ -2777,9 +2778,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("prg"), cultureInfo);
 		}
@@ -2794,9 +2795,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("prs"), cultureInfo);
 		}
@@ -2811,9 +2812,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ps"), cultureInfo);
 		}
@@ -2828,9 +2829,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("pt"), cultureInfo);
 		}
@@ -2845,9 +2846,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("quz"), cultureInfo);
 		}
@@ -2862,9 +2863,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("rm"), cultureInfo);
 		}
@@ -2879,9 +2880,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("rn"), cultureInfo);
 		}
@@ -2896,9 +2897,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ro"), cultureInfo);
 		}
@@ -2913,9 +2914,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("rof"), cultureInfo);
 		}
@@ -2930,9 +2931,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ru"), cultureInfo);
 		}
@@ -2947,9 +2948,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("rw"), cultureInfo);
 		}
@@ -2964,9 +2965,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("rwk"), cultureInfo);
 		}
@@ -2981,9 +2982,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sa"), cultureInfo);
 		}
@@ -2998,9 +2999,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sah"), cultureInfo);
 		}
@@ -3015,9 +3016,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("saq"), cultureInfo);
 		}
@@ -3032,9 +3033,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sbp"), cultureInfo);
 		}
@@ -3049,9 +3050,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sd"), cultureInfo);
 		}
@@ -3066,9 +3067,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("se"), cultureInfo);
 		}
@@ -3083,9 +3084,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("seh"), cultureInfo);
 		}
@@ -3100,9 +3101,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ses"), cultureInfo);
 		}
@@ -3117,9 +3118,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sg"), cultureInfo);
 		}
@@ -3134,9 +3135,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("shi"), cultureInfo);
 		}
@@ -3151,9 +3152,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("si"), cultureInfo);
 		}
@@ -3168,9 +3169,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sk"), cultureInfo);
 		}
@@ -3185,9 +3186,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sl"), cultureInfo);
 		}
@@ -3202,9 +3203,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sma"), cultureInfo);
 		}
@@ -3219,9 +3220,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("smj"), cultureInfo);
 		}
@@ -3236,9 +3237,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("smn"), cultureInfo);
 		}
@@ -3253,9 +3254,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sms"), cultureInfo);
 		}
@@ -3270,9 +3271,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sn"), cultureInfo);
 		}
@@ -3287,9 +3288,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("so"), cultureInfo);
 		}
@@ -3304,9 +3305,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sq"), cultureInfo);
 		}
@@ -3321,9 +3322,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sr"), cultureInfo);
 		}
@@ -3338,9 +3339,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ss"), cultureInfo);
 		}
@@ -3355,9 +3356,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ssy"), cultureInfo);
 		}
@@ -3372,9 +3373,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("st"), cultureInfo);
 		}
@@ -3389,9 +3390,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sv"), cultureInfo);
 		}
@@ -3406,9 +3407,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("sw"), cultureInfo);
 		}
@@ -3423,9 +3424,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("syr"), cultureInfo);
 		}
@@ -3440,9 +3441,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ta"), cultureInfo);
 		}
@@ -3457,9 +3458,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("te"), cultureInfo);
 		}
@@ -3474,9 +3475,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("teo"), cultureInfo);
 		}
@@ -3491,9 +3492,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("tg"), cultureInfo);
 		}
@@ -3508,9 +3509,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("th"), cultureInfo);
 		}
@@ -3525,9 +3526,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ti"), cultureInfo);
 		}
@@ -3542,9 +3543,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("tig"), cultureInfo);
 		}
@@ -3559,9 +3560,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("tk"), cultureInfo);
 		}
@@ -3576,9 +3577,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("tn"), cultureInfo);
 		}
@@ -3593,9 +3594,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("to"), cultureInfo);
 		}
@@ -3610,9 +3611,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("tr"), cultureInfo);
 		}
@@ -3627,9 +3628,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ts"), cultureInfo);
 		}
@@ -3644,9 +3645,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("tt"), cultureInfo);
 		}
@@ -3661,9 +3662,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("twq"), cultureInfo);
 		}
@@ -3678,9 +3679,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("tzm"), cultureInfo);
 		}
@@ -3695,9 +3696,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ug"), cultureInfo);
 		}
@@ -3712,9 +3713,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("uk"), cultureInfo);
 		}
@@ -3729,9 +3730,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ur"), cultureInfo);
 		}
@@ -3746,9 +3747,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("uz"), cultureInfo);
 		}
@@ -3763,9 +3764,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("vai"), cultureInfo);
 		}
@@ -3780,9 +3781,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("ve"), cultureInfo);
 		}
@@ -3797,9 +3798,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("vi"), cultureInfo);
 		}
@@ -3814,9 +3815,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("vo"), cultureInfo);
 		}
@@ -3831,9 +3832,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("vun"), cultureInfo);
 		}
@@ -3848,9 +3849,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("wae"), cultureInfo);
 		}
@@ -3865,9 +3866,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("wal"), cultureInfo);
 		}
@@ -3882,9 +3883,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("wo"), cultureInfo);
 		}
@@ -3899,9 +3900,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("xh"), cultureInfo);
 		}
@@ -3916,9 +3917,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("xog"), cultureInfo);
 		}
@@ -3933,9 +3934,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("yav"), cultureInfo);
 		}
@@ -3950,9 +3951,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("yi"), cultureInfo);
 		}
@@ -3967,9 +3968,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("yo"), cultureInfo);
 		}
@@ -3984,9 +3985,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("zgh"), cultureInfo);
 		}
@@ -4001,9 +4002,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("zh"), cultureInfo);
 		}
@@ -4018,9 +4019,9 @@ namespace Phema.Localization.Cultures.Tests
 
 			var provider = services.BuildServiceProvider();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 
-			var (cultureInfo, _) = options.Localization.Single();
+			var cultureInfo = options.SupportedCultures.Single();
 
 			Assert.Equal(CultureInfo.GetCultureInfo("zu"), cultureInfo);
 		}

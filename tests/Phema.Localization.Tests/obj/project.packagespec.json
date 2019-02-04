@@ -1,0 +1,63 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\Sergey\\Desktop\\Phema.Localization\\tests\\Phema.Localization.Tests\\Phema.Localization.Tests.csproj",
+    "projectName": "Phema.Localization.Tests",
+    "projectPath": "C:\\Users\\Sergey\\Desktop\\Phema.Localization\\tests\\Phema.Localization.Tests\\Phema.Localization.Tests.csproj",
+    "outputPath": "C:\\Users\\Sergey\\Desktop\\Phema.Localization\\tests\\Phema.Localization.Tests\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {
+          "C:\\Users\\Sergey\\Desktop\\Phema.Localization\\src\\Phema.Localization\\Phema.Localization.csproj": {
+            "projectPath": "C:\\Users\\Sergey\\Desktop\\Phema.Localization\\src\\Phema.Localization\\Phema.Localization.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "Microsoft.Extensions.DependencyInjection": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[15.9.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.4.0, )"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "[2.4.0, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

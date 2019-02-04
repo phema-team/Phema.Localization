@@ -74,7 +74,7 @@ namespace Phema.Localization.Tests
 					culture.AddComponent<TestModel, ITestModelLocalizationComponent, EnglishTestModelLocalizationComponent>());
 			});
 
-			services.Configure<LocalizationOptions>(options => options.CultureInfo = CultureInfo.InvariantCulture);
+			services.Configure<RequestLocalizationOptions>(options => options.DefaultRequestCulture = new RequestCulture(CultureInfo.InvariantCulture));
 
 			var provider = services.BuildServiceProvider();
 
@@ -98,15 +98,15 @@ namespace Phema.Localization.Tests
 					culture.AddComponent<TestModel, ITestModelLocalizationComponent, InvariantTestModelLocalizationComponent>());
 			});
 
-			services.Configure<LocalizationOptions>(o => o.CultureInfo = CultureInfo.GetCultureInfo("en"));
+			services.Configure<RequestLocalizationOptions>(o => o.DefaultRequestCulture = new RequestCulture(CultureInfo.GetCultureInfo("en")));
 
 			var provider = services.BuildServiceProvider();
 
 			provider.GetRequiredService<ILocalizer>();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 			
-			Assert.Equal(CultureInfo.InvariantCulture, options.CultureInfo);
+			Assert.Equal(CultureInfo.InvariantCulture, options.DefaultRequestCulture.Culture);
 		}
 	}
 }
