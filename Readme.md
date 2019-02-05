@@ -1,6 +1,7 @@
 ## Phema.Localization
 - `ILocalizationComponent<TModel>` : `IModelLocalizationComponent` : `*ModelLocalizationComponent`
-```csproj
+- `AddPhemaLocalization` -> `AddCulture` -> `AddComponent`
+```csharp
 // Add
 services.AddPhemaLocalization(configuration =>
 	configuration.AddCulture(CultureInfo.GetCultureInfo("en", culture =>
