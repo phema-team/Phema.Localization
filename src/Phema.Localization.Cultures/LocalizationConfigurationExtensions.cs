@@ -5,1656 +5,1656 @@ namespace Phema.Localization
 {
 	public static class LocalizationConfigurationExtensions
 	{
-		public static void AddInvariantCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddInvariantCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo(""), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo(""), culture);
 		}
 
-		public static void AddAfarCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAfarCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("aa"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("aa"), culture);
 		}
 
-		public static void AddAfrikaansCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAfrikaansCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("af"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("af"), culture);
 		}
 
-		public static void AddAghemCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAghemCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("agq"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("agq"), culture);
 		}
 
-		public static void AddAkanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAkanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ak"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ak"), culture);
 		}
 
-		public static void AddAmharicCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAmharicCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("am"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("am"), culture);
 		}
 
-		public static void AddArabicCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddArabicCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ar"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ar"), culture);
 		}
 
-		public static void AddMapudungunCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMapudungunCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("arn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("arn"), culture);
 		}
 
-		public static void AddAssameseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAssameseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("as"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("as"), culture);
 		}
 
-		public static void AddAsuCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAsuCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("asa"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("asa"), culture);
 		}
 
-		public static void AddAsturianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAsturianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ast"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ast"), culture);
 		}
 
-		public static void AddAzerbaijaniCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAzerbaijaniCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("az"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("az"), culture);
 		}
 
-		public static void AddBashkirCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBashkirCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ba"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ba"), culture);
 		}
 
-		public static void AddBasaaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBasaaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bas"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bas"), culture);
 		}
 
-		public static void AddBelarusianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBelarusianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("be"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("be"), culture);
 		}
 
-		public static void AddBembaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBembaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bem"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bem"), culture);
 		}
 
-		public static void AddBenaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBenaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bez"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bez"), culture);
 		}
 
-		public static void AddBulgarianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBulgarianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bg"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bg"), culture);
 		}
 
-		public static void AddEdoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddEdoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bin"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bin"), culture);
 		}
 
-		public static void AddBamanankanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBamanankanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bm"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bm"), culture);
 		}
 
-		public static void AddBanglaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBanglaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bn"), culture);
 		}
 
-		public static void AddTibetanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTibetanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bo"), culture);
 		}
 
-		public static void AddBretonCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBretonCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("br"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("br"), culture);
 		}
 
-		public static void AddBodoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBodoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("brx"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("brx"), culture);
 		}
 
-		public static void AddBosnianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBosnianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("bs"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("bs"), culture);
 		}
 
-		public static void AddBlinCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBlinCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("byn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("byn"), culture);
 		}
 
-		public static void AddCatalanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddCatalanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ca"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ca"), culture);
 		}
 
-		public static void AddChechenCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddChechenCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ce"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ce"), culture);
 		}
 
-		public static void AddChigaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddChigaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("cgg"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("cgg"), culture);
 		}
 
-		public static void AddCherokeeCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddCherokeeCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("chr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("chr"), culture);
 		}
 
-		public static void AddCorsicanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddCorsicanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("co"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("co"), culture);
 		}
 
-		public static void AddCzechCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddCzechCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("cs"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("cs"), culture);
 		}
 
-		public static void AddChurchSlavicCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddChurchSlavicCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("cu"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("cu"), culture);
 		}
 
-		public static void AddWelshCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddWelshCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("cy"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("cy"), culture);
 		}
 
-		public static void AddDanishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddDanishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("da"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("da"), culture);
 		}
 
-		public static void AddTaitaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTaitaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("dav"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("dav"), culture);
 		}
 
-		public static void AddGermanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGermanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("de"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("de"), culture);
 		}
 
-		public static void AddZarmaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddZarmaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("dje"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("dje"), culture);
 		}
 
-		public static void AddLowerSorbianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLowerSorbianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("dsb"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("dsb"), culture);
 		}
 
-		public static void AddDualaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddDualaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("dua"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("dua"), culture);
 		}
 
-		public static void AddDivehiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddDivehiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("dv"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("dv"), culture);
 		}
 
-		public static void AddJolaFonyiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddJolaFonyiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("dyo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("dyo"), culture);
 		}
 
-		public static void AddDzongkhaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddDzongkhaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("dz"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("dz"), culture);
 		}
 
-		public static void AddEmbuCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddEmbuCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ebu"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ebu"), culture);
 		}
 
-		public static void AddEweCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddEweCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ee"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ee"), culture);
 		}
 
-		public static void AddGreekCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGreekCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("el"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("el"), culture);
 		}
 
-		public static void AddEnglishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddEnglishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("en"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("en"), culture);
 		}
 
-		public static void AddEsperantoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddEsperantoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("eo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("eo"), culture);
 		}
 
-		public static void AddSpanishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSpanishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("es"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("es"), culture);
 		}
 
-		public static void AddEstonianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddEstonianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("et"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("et"), culture);
 		}
 
-		public static void AddBasqueCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBasqueCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("eu"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("eu"), culture);
 		}
 
-		public static void AddEwondoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddEwondoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ewo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ewo"), culture);
 		}
 
-		public static void AddPersianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddPersianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("fa"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("fa"), culture);
 		}
 
-		public static void AddFulahCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddFulahCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ff"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ff"), culture);
 		}
 
-		public static void AddFinnishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddFinnishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("fi"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("fi"), culture);
 		}
 
-		public static void AddFilipinoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddFilipinoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("fil"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("fil"), culture);
 		}
 
-		public static void AddFaroeseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddFaroeseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("fo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("fo"), culture);
 		}
 
-		public static void AddFrenchCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddFrenchCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("fr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("fr"), culture);
 		}
 
-		public static void AddFriulianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddFriulianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("fur"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("fur"), culture);
 		}
 
-		public static void AddWesternFrisianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddWesternFrisianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("fy"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("fy"), culture);
 		}
 
-		public static void AddIrishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddIrishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ga"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ga"), culture);
 		}
 
-		public static void AddScottishGaelicCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddScottishGaelicCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("gd"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("gd"), culture);
 		}
 
-		public static void AddGalicianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGalicianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("gl"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("gl"), culture);
 		}
 
-		public static void AddGuaraniCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGuaraniCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("gn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("gn"), culture);
 		}
 
-		public static void AddSwissGermanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSwissGermanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("gsw"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("gsw"), culture);
 		}
 
-		public static void AddGujaratiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGujaratiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("gu"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("gu"), culture);
 		}
 
-		public static void AddGusiiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGusiiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("guz"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("guz"), culture);
 		}
 
-		public static void AddManxCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddManxCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("gv"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("gv"), culture);
 		}
 
-		public static void AddHausaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddHausaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ha"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ha"), culture);
 		}
 
-		public static void AddHawaiianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddHawaiianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("haw"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("haw"), culture);
 		}
 
-		public static void AddHebrewCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddHebrewCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("he"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("he"), culture);
 		}
 
-		public static void AddHindiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddHindiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("hi"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("hi"), culture);
 		}
 
-		public static void AddCroatianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddCroatianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("hr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("hr"), culture);
 		}
 
-		public static void AddUpperSorbianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddUpperSorbianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("hsb"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("hsb"), culture);
 		}
 
-		public static void AddHungarianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddHungarianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("hu"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("hu"), culture);
 		}
 
-		public static void AddArmenianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddArmenianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("hy"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("hy"), culture);
 		}
 
-		public static void AddInterlinguaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddInterlinguaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ia"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ia"), culture);
 		}
 
-		public static void AddIbibioCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddIbibioCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ibb"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ibb"), culture);
 		}
 
-		public static void AddIndonesianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddIndonesianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("id"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("id"), culture);
 		}
 
-		public static void AddIgboCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddIgboCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ig"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ig"), culture);
 		}
 
-		public static void AddYiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddYiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ii"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ii"), culture);
 		}
 
-		public static void AddIcelandicCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddIcelandicCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("is"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("is"), culture);
 		}
 
-		public static void AddItalianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddItalianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("it"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("it"), culture);
 		}
 
-		public static void AddInuktitutCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddInuktitutCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("iu"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("iu"), culture);
 		}
 
-		public static void AddJapaneseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddJapaneseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ja"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ja"), culture);
 		}
 
-		public static void AddNgombaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNgombaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("jgo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("jgo"), culture);
 		}
 
-		public static void AddMachameCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMachameCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("jmc"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("jmc"), culture);
 		}
 
-		public static void AddJavaneseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddJavaneseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("jv"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("jv"), culture);
 		}
 
-		public static void AddGeorgianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGeorgianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ka"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ka"), culture);
 		}
 
-		public static void AddKabyleCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKabyleCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kab"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kab"), culture);
 		}
 
-		public static void AddKambaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKambaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kam"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kam"), culture);
 		}
 
-		public static void AddMakondeCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMakondeCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kde"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kde"), culture);
 		}
 
-		public static void AddKabuverdianuCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKabuverdianuCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kea"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kea"), culture);
 		}
 
-		public static void AddKoyraChiiniCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKoyraChiiniCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("khq"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("khq"), culture);
 		}
 
-		public static void AddKikuyuCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKikuyuCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ki"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ki"), culture);
 		}
 
-		public static void AddKazakhCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKazakhCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kk"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kk"), culture);
 		}
 
-		public static void AddKakoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKakoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kkj"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kkj"), culture);
 		}
 
-		public static void AddGreenlandicCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGreenlandicCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kl"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kl"), culture);
 		}
 
-		public static void AddKalenjinCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKalenjinCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kln"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kln"), culture);
 		}
 
-		public static void AddKhmerCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKhmerCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("km"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("km"), culture);
 		}
 
-		public static void AddKannadaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKannadaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kn"), culture);
 		}
 
-		public static void AddKoreanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKoreanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ko"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ko"), culture);
 		}
 
-		public static void AddKonkaniCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKonkaniCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kok"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kok"), culture);
 		}
 
-		public static void AddKanuriCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKanuriCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kr"), culture);
 		}
 
-		public static void AddKashmiriCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKashmiriCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ks"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ks"), culture);
 		}
 
-		public static void AddShambalaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddShambalaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ksb"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ksb"), culture);
 		}
 
-		public static void AddBafiaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBafiaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ksf"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ksf"), culture);
 		}
 
-		public static void AddColognianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddColognianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ksh"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ksh"), culture);
 		}
 
-		public static void AddCentralKurdishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddCentralKurdishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ku"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ku"), culture);
 		}
 
-		public static void AddCornishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddCornishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("kw"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("kw"), culture);
 		}
 
-		public static void AddKyrgyzCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKyrgyzCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ky"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ky"), culture);
 		}
 
-		public static void AddLatinCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLatinCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("la"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("la"), culture);
 		}
 
-		public static void AddLangiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLangiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lag"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lag"), culture);
 		}
 
-		public static void AddLuxembourgishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLuxembourgishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lb"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lb"), culture);
 		}
 
-		public static void AddGandaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddGandaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lg"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lg"), culture);
 		}
 
-		public static void AddLakotaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLakotaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lkt"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lkt"), culture);
 		}
 
-		public static void AddLingalaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLingalaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ln"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ln"), culture);
 		}
 
-		public static void AddLaoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLaoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lo"), culture);
 		}
 
-		public static void AddNorthernLuriCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNorthernLuriCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lrc"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lrc"), culture);
 		}
 
-		public static void AddLithuanianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLithuanianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lt"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lt"), culture);
 		}
 
-		public static void AddLubaKatangaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLubaKatangaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lu"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lu"), culture);
 		}
 
-		public static void AddLuoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLuoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("luo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("luo"), culture);
 		}
 
-		public static void AddLuyiaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLuyiaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("luy"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("luy"), culture);
 		}
 
-		public static void AddLatvianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLatvianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("lv"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("lv"), culture);
 		}
 
-		public static void AddMasaiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMasaiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mas"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mas"), culture);
 		}
 
-		public static void AddMeruCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMeruCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mer"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mer"), culture);
 		}
 
-		public static void AddMorisyenCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMorisyenCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mfe"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mfe"), culture);
 		}
 
-		public static void AddMalagasyCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMalagasyCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mg"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mg"), culture);
 		}
 
-		public static void AddMakhuwaMeettoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMakhuwaMeettoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mgh"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mgh"), culture);
 		}
 
-		public static void AddMetaʼCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMetaʼCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mgo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mgo"), culture);
 		}
 
-		public static void AddMaoriCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMaoriCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mi"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mi"), culture);
 		}
 
-		public static void AddMacedonianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMacedonianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mk"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mk"), culture);
 		}
 
-		public static void AddMalayalamCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMalayalamCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ml"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ml"), culture);
 		}
 
-		public static void AddMongolianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMongolianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mn"), culture);
 		}
 
-		public static void AddManipuriCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddManipuriCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mni"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mni"), culture);
 		}
 
-		public static void AddMohawkCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMohawkCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("moh"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("moh"), culture);
 		}
 
-		public static void AddMarathiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMarathiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mr"), culture);
 		}
 
-		public static void AddMalayCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMalayCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ms"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ms"), culture);
 		}
 
-		public static void AddMalteseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMalteseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mt"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mt"), culture);
 		}
 
-		public static void AddMundangCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMundangCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mua"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mua"), culture);
 		}
 
-		public static void AddBurmeseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddBurmeseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("my"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("my"), culture);
 		}
 
-		public static void AddMazanderaniCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddMazanderaniCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("mzn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("mzn"), culture);
 		}
 
-		public static void AddNamaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNamaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("naq"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("naq"), culture);
 		}
 
-		public static void AddNorwegianBokmålCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNorwegianBokmålCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nb"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nb"), culture);
 		}
 
-		public static void AddNorthNdebeleCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNorthNdebeleCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nd"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nd"), culture);
 		}
 
-		public static void AddLowGermanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddLowGermanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nds"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nds"), culture);
 		}
 
-		public static void AddNepaliCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNepaliCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ne"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ne"), culture);
 		}
 
-		public static void AddDutchCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddDutchCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nl"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nl"), culture);
 		}
 
-		public static void AddKwasioCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKwasioCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nmg"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nmg"), culture);
 		}
 
-		public static void AddNorwegianNynorskCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNorwegianNynorskCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nn"), culture);
 		}
 
-		public static void AddNgiemboonCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNgiemboonCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nnh"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nnh"), culture);
 		}
 
-		public static void AddNorwegianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNorwegianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("no"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("no"), culture);
 		}
 
-		public static void AddSouthNdebeleCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSouthNdebeleCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nr"), culture);
 		}
 
-		public static void AddNuerCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNuerCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nus"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nus"), culture);
 		}
 
-		public static void AddNyankoleCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNyankoleCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("nyn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("nyn"), culture);
 		}
 
-		public static void AddOccitanCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddOccitanCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("oc"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("oc"), culture);
 		}
 
-		public static void AddOromoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddOromoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("om"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("om"), culture);
 		}
 
-		public static void AddOdiaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddOdiaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("or"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("or"), culture);
 		}
 
-		public static void AddOsseticCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddOsseticCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("os"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("os"), culture);
 		}
 
-		public static void AddPunjabiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddPunjabiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("pa"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("pa"), culture);
 		}
 
-		public static void AddPapiamentoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddPapiamentoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("pap"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("pap"), culture);
 		}
 
-		public static void AddPolishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddPolishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("pl"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("pl"), culture);
 		}
 
-		public static void AddPrussianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddPrussianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("prg"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("prg"), culture);
 		}
 
-		public static void AddDariCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddDariCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("prs"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("prs"), culture);
 		}
 
-		public static void AddPashtoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddPashtoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ps"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ps"), culture);
 		}
 
-		public static void AddPortugueseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddPortugueseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("pt"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("pt"), culture);
 		}
 
-		public static void AddQuechuaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddQuechuaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("quz"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("quz"), culture);
 		}
 
-		public static void AddRomanshCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddRomanshCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("rm"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("rm"), culture);
 		}
 
-		public static void AddRundiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddRundiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("rn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("rn"), culture);
 		}
 
-		public static void AddRomanianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddRomanianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ro"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ro"), culture);
 		}
 
-		public static void AddRomboCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddRomboCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("rof"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("rof"), culture);
 		}
 
-		public static void AddRussianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddRussianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ru"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ru"), culture);
 		}
 
-		public static void AddKinyarwandaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKinyarwandaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("rw"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("rw"), culture);
 		}
 
-		public static void AddRwaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddRwaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("rwk"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("rwk"), culture);
 		}
 
-		public static void AddSanskritCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSanskritCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sa"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sa"), culture);
 		}
 
-		public static void AddSakhaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSakhaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sah"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sah"), culture);
 		}
 
-		public static void AddSamburuCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSamburuCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("saq"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("saq"), culture);
 		}
 
-		public static void AddSanguCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSanguCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sbp"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sbp"), culture);
 		}
 
-		public static void AddSindhiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSindhiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sd"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sd"), culture);
 		}
 
-		public static void AddNorthernSamiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddNorthernSamiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("se"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("se"), culture);
 		}
 
-		public static void AddSenaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSenaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("seh"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("seh"), culture);
 		}
 
-		public static void AddKoyraboroSenniCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKoyraboroSenniCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ses"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ses"), culture);
 		}
 
-		public static void AddSangoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSangoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sg"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sg"), culture);
 		}
 
-		public static void AddTachelhitCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTachelhitCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("shi"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("shi"), culture);
 		}
 
-		public static void AddSinhalaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSinhalaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("si"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("si"), culture);
 		}
 
-		public static void AddSlovakCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSlovakCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sk"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sk"), culture);
 		}
 
-		public static void AddSlovenianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSlovenianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sl"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sl"), culture);
 		}
 
-		public static void AddSamiSouthernCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSamiSouthernCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sma"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sma"), culture);
 		}
 
-		public static void AddSamiLuleCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSamiLuleCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("smj"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("smj"), culture);
 		}
 
-		public static void AddSamiInariCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSamiInariCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("smn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("smn"), culture);
 		}
 
-		public static void AddSamiSkoltCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSamiSkoltCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sms"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sms"), culture);
 		}
 
-		public static void AddShonaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddShonaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sn"), culture);
 		}
 
-		public static void AddSomaliCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSomaliCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("so"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("so"), culture);
 		}
 
-		public static void AddAlbanianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddAlbanianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sq"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sq"), culture);
 		}
 
-		public static void AddSerbianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSerbianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sr"), culture);
 		}
 
-		public static void AddsiSwatiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddsiSwatiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ss"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ss"), culture);
 		}
 
-		public static void AddSahoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSahoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ssy"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ssy"), culture);
 		}
 
-		public static void AddSesothoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSesothoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("st"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("st"), culture);
 		}
 
-		public static void AddSwedishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSwedishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sv"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sv"), culture);
 		}
 
-		public static void AddKiswahiliCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddKiswahiliCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("sw"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("sw"), culture);
 		}
 
-		public static void AddSyriacCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSyriacCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("syr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("syr"), culture);
 		}
 
-		public static void AddTamilCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTamilCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ta"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ta"), culture);
 		}
 
-		public static void AddTeluguCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTeluguCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("te"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("te"), culture);
 		}
 
-		public static void AddTesoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTesoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("teo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("teo"), culture);
 		}
 
-		public static void AddTajikCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTajikCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("tg"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("tg"), culture);
 		}
 
-		public static void AddThaiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddThaiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("th"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("th"), culture);
 		}
 
-		public static void AddTigrinyaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTigrinyaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ti"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ti"), culture);
 		}
 
-		public static void AddTigreCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTigreCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("tig"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("tig"), culture);
 		}
 
-		public static void AddTurkmenCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTurkmenCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("tk"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("tk"), culture);
 		}
 
-		public static void AddSetswanaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSetswanaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("tn"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("tn"), culture);
 		}
 
-		public static void AddTonganCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTonganCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("to"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("to"), culture);
 		}
 
-		public static void AddTurkishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTurkishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("tr"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("tr"), culture);
 		}
 
-		public static void AddTsongaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTsongaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ts"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ts"), culture);
 		}
 
-		public static void AddTatarCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTatarCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("tt"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("tt"), culture);
 		}
 
-		public static void AddTasawaqCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddTasawaqCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("twq"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("twq"), culture);
 		}
 
-		public static void AddCentralAtlasTamazightCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddCentralAtlasTamazightCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("tzm"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("tzm"), culture);
 		}
 
-		public static void AddUyghurCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddUyghurCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ug"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ug"), culture);
 		}
 
-		public static void AddUkrainianCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddUkrainianCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("uk"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("uk"), culture);
 		}
 
-		public static void AddUrduCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddUrduCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ur"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ur"), culture);
 		}
 
-		public static void AddUzbekCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddUzbekCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("uz"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("uz"), culture);
 		}
 
-		public static void AddVaiCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddVaiCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("vai"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("vai"), culture);
 		}
 
-		public static void AddVendaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddVendaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("ve"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("ve"), culture);
 		}
 
-		public static void AddVietnameseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddVietnameseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("vi"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("vi"), culture);
 		}
 
-		public static void AddVolapükCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddVolapükCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("vo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("vo"), culture);
 		}
 
-		public static void AddVunjoCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddVunjoCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("vun"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("vun"), culture);
 		}
 
-		public static void AddWalserCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddWalserCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("wae"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("wae"), culture);
 		}
 
-		public static void AddWolayttaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddWolayttaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("wal"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("wal"), culture);
 		}
 
-		public static void AddWolofCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddWolofCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("wo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("wo"), culture);
 		}
 
-		public static void AddisiXhosaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddisiXhosaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("xh"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("xh"), culture);
 		}
 
-		public static void AddSogaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddSogaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("xog"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("xog"), culture);
 		}
 
-		public static void AddYangbenCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddYangbenCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("yav"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("yav"), culture);
 		}
 
-		public static void AddYiddishCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddYiddishCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("yi"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("yi"), culture);
 		}
 
-		public static void AddYorubaCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddYorubaCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("yo"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("yo"), culture);
 		}
 
-		public static void AddStandardMoroccanTamazightCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddStandardMoroccanTamazightCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("zgh"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("zgh"), culture);
 		}
 
-		public static void AddChineseCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddChineseCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("zh"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("zh"), culture);
 		}
 
-		public static void AddisiZuluCulture(
-			this ILocalizationConfiguration configuration,
-			Action<ICultureConfiguration> action)
+		public static ILocalizationConfiguration AddisiZuluCulture(
+		this ILocalizationConfiguration configuration,
+		Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCulture(CultureInfo.GetCultureInfo("zu"), action);
+			return configuration.AddCulture(CultureInfo.GetCultureInfo("zu"), culture);
 		}
 	}
 }

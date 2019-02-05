@@ -101,6 +101,8 @@ namespace Phema.Localization.Tests
 
 		private IServiceProvider ConfigureForCulture(string cultureInfo)
 		{
+			CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo(cultureInfo);
+			
 			return new ServiceCollection()
 				.AddPhemaLocalization(configuration =>
 				{
@@ -114,19 +116,6 @@ namespace Phema.Localization.Tests
 					{
 						culture.AddComponent<LocalizerModel, ILocalizerModelComponent, EnglishLocalizerModelComponent>();
 					});
-				})
-				.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(sp => new HttpContextAccessor
-				{
-					HttpContext = new DefaultHttpContext
-					{
-						Request =
-						{
-							Headers =
-							{
-								[HeaderNames.AcceptLanguage] = cultureInfo
-							}
-						}
-					}
 				})
 				.BuildServiceProvider();
 		}

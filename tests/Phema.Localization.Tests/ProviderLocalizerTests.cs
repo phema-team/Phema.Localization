@@ -1,5 +1,7 @@
 using System.Globalization;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
@@ -46,17 +48,13 @@ namespace Phema.Localization.Tests
 			services.AddPhemaLocalization(localization => localization.AddCulture(CultureInfo.InvariantCulture, culture =>
 				culture.AddComponent<TestModel, ITestModelLocalizationComponent, InvariantTestModelLocalizationComponent>()));
 
-			services.Configure<LocalizationOptions>(options => options.CultureInfo = CultureInfo.InvariantCulture);
+			services.Configure<RequestLocalizationOptions>(options => options.DefaultRequestCulture = new RequestCulture(CultureInfo.InvariantCulture));
 
-			services.AddScoped<IHttpContextAccessor>(sp => new HttpContextAccessor
-			{
-				HttpContext = new DefaultHttpContext()
-			});
-			
 			var provider = services.BuildServiceProvider();
 
 			var localizer = Assert.IsType<Localizer>(provider.GetRequiredService<ILocalizer>());
 
+			CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate);
 
 			Assert.Equal("template", message);
@@ -76,26 +74,14 @@ namespace Phema.Localization.Tests
 					culture.AddComponent<TestModel, ITestModelLocalizationComponent, EnglishTestModelLocalizationComponent>());
 			});
 
-			services.Configure<LocalizationOptions>(options => options.CultureInfo = CultureInfo.InvariantCulture);
+			services.Configure<RequestLocalizationOptions>(options => options.DefaultRequestCulture = new RequestCulture(CultureInfo.InvariantCulture));
 
-			services.AddScoped<IHttpContextAccessor>(sp => new HttpContextAccessor
-			{
-				HttpContext = new DefaultHttpContext
-				{
-					Request =
-					{
-						Headers =
-						{
-							[HeaderNames.AcceptLanguage] = "en"
-						}
-					}
-				}
-			});
-			
 			var provider = services.BuildServiceProvider();
 
 			var localizer = Assert.IsType<Localizer>(provider.GetRequiredService<ILocalizer>());
 
+			CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en");
+			
 			var message = localizer.Localize<ITestModelLocalizationComponent>(c => c.TestTemplate);
 
 			Assert.Equal("english template", message);
@@ -112,15 +98,15 @@ namespace Phema.Localization.Tests
 					culture.AddComponent<TestModel, ITestModelLocalizationComponent, InvariantTestModelLocalizationComponent>());
 			});
 
-			services.Configure<LocalizationOptions>(o => o.CultureInfo = CultureInfo.GetCultureInfo("en"));
+			services.Configure<RequestLocalizationOptions>(o => o.DefaultRequestCulture = new RequestCulture(CultureInfo.GetCultureInfo("en")));
 
 			var provider = services.BuildServiceProvider();
 
 			provider.GetRequiredService<ILocalizer>();
 
-			var options = provider.GetRequiredService<IOptions<LocalizationOptions>>().Value;
+			var options = provider.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value;
 			
-			Assert.Equal(CultureInfo.InvariantCulture, options.CultureInfo);
+			Assert.Equal(CultureInfo.InvariantCulture, options.DefaultRequestCulture.Culture);
 		}
 	}
 }
