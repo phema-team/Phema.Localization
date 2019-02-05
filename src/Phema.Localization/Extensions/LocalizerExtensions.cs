@@ -4,6 +4,7 @@ namespace Phema.Localization
 {
 	public static class LocalizerExtensions
 	{
+		/// <inheritdoc cref="ILocalizer.Localize{TComponent}"/>
 		public static string Localize<TComponent>(
 			this ILocalizer localizer, 
 			Func<TComponent, LocalizationTemplate> selector)
@@ -12,6 +13,7 @@ namespace Phema.Localization
 			return localizer.Localize(selector, Array.Empty<object>());
 		}
 		
+		/// <inheritdoc cref="ILocalizer.Localize{TComponent}"/>
 		public static string Localize<TComponent, TArgument>(
 			this ILocalizer localizer, 
 			Func<TComponent, LocalizationTemplate<TArgument>> selector, 
@@ -21,6 +23,7 @@ namespace Phema.Localization
 			return localizer.Localize(selector, new object[] { argument });
 		}
 		
+		/// <inheritdoc cref="ILocalizer.Localize{TComponent}"/>
 		public static string Localize<TComponent, TArgument1, TArgument2>(
 			this ILocalizer localizer, 
 			Func<TComponent, LocalizationTemplate<TArgument1, TArgument2>> selector, 
@@ -31,6 +34,7 @@ namespace Phema.Localization
 			return localizer.Localize(selector, new object[] { argument1, argument2 });
 		}
 		
+		/// <inheritdoc cref="ILocalizer.Localize{TComponent}"/>
 		public static string Localize<TComponent, TArgument1, TArgument2, TArgument3>(
 			this ILocalizer localizer, 
 			Func<TComponent, LocalizationTemplate<TArgument1, TArgument2, TArgument3>> selector, 

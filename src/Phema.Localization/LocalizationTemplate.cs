@@ -3,6 +3,7 @@ using System.Globalization;
 
 namespace Phema.Localization
 {
+	/// <inheritdoc cref="ILocalizationTemplate"/>
 	public sealed class LocalizationTemplate : ILocalizationTemplate
 	{
 		private readonly string template;
@@ -12,6 +13,7 @@ namespace Phema.Localization
 			this.template = template;
 		}
 
+		/// <inheritdoc cref="ILocalizationTemplate.GetMessage"/>
 		public string GetMessage(CultureInfo cultureInfo, object[] arguments)
 		{
 			if (arguments == null)
@@ -23,6 +25,7 @@ namespace Phema.Localization
 		}
 	}
 	
+	/// <inheritdoc cref="ILocalizationTemplate"/>
 	public sealed class LocalizationTemplate<TArgument> : ILocalizationTemplate
 	{
 		private readonly string template;
@@ -32,6 +35,7 @@ namespace Phema.Localization
 			this.template = template;
 		}
 		
+		/// <inheritdoc cref="ILocalizationTemplate.GetMessage"/>
 		public string GetMessage(CultureInfo cultureInfo, object[] arguments)
 		{
 			if (arguments == null)
@@ -44,6 +48,7 @@ namespace Phema.Localization
 		}
 	}
 	
+	/// <inheritdoc cref="ILocalizationTemplate"/>
 	public sealed class LocalizationTemplate<TArgument1, TArgument2> : ILocalizationTemplate
 	{
 		private readonly string template;
@@ -53,6 +58,7 @@ namespace Phema.Localization
 			this.template = template;
 		}
 		
+		/// <inheritdoc cref="ILocalizationTemplate.GetMessage"/>
 		public string GetMessage(CultureInfo cultureInfo, object[] arguments)
 		{
 			if (arguments == null)
@@ -65,6 +71,7 @@ namespace Phema.Localization
 		}
 	}
 	
+	/// <inheritdoc cref="ILocalizationTemplate"/>
 	public sealed class LocalizationTemplate<TArgument1, TArgument2, TArgument3> : ILocalizationTemplate
 	{
 		private readonly string template;
@@ -74,6 +81,7 @@ namespace Phema.Localization
 			this.template = template;
 		}
 		
+		/// <inheritdoc cref="ILocalizationTemplate.GetMessage"/>
 		public string GetMessage(CultureInfo cultureInfo, object[] arguments)
 		{
 			if (arguments == null)

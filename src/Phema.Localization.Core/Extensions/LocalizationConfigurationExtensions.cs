@@ -5,12 +5,15 @@ namespace Phema.Localization
 {
 	public static class LocalizationConfigurationExtensions
 	{
-		public static void AddCulture(
+		/// <summary>
+		/// Добавляет заданную культуру
+		/// </summary>
+		public static ILocalizationConfiguration AddCulture(
 			this ILocalizationConfiguration configuration, 
 			CultureInfo cultureInfo, 
 			Action<ICultureConfiguration> culture)
 		{
-			configuration.AddCultures(new[] { cultureInfo }, culture);
+			return configuration.AddCultures(new[] { cultureInfo }, culture);
 		}
 	}
 }
