@@ -8,6 +8,9 @@ services.AddPhemaLocalization(configuration =>
 		culture.AddComponent<Model, IModelLocalizationComponent, EnglishModelLocalizationComponent>()),
 	configuration.AddCulture(CultureInfo.GetCultureInfo("ru"), culture =>
 		culture.AddComponent<Model, IModelLocalizationComponent, RussianModelLocalizationComponent>())));
+		
+// Configure
+app.UseRequestLocalization();
 
 // Get
 var localizer = serviceProvider.GetRequiredService<ILocalizer>();
